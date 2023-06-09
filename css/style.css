@@ -1,74 +1,276 @@
 *  { margin: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 list-style: none;
-padding:0 ;
-box-sizing: border-box ;
+align-items: center;
+justify-content: center;
+ box-sizing: border-box ; 
+}
+/* COSITAS DEL HEADER  */
+header{
+ 
+  background-color: rgb(255, 37, 37);
+  border-style: inset;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
 }
 
-a{text-decoration: none;
-    color: black;}
-    
-body{background-color: rgb(171, 171, 171);}
+/*MITAD IZQUIERDA HEADER */
+.logo{display: flex; padding:5px; justify-content: space-around;}
+.logo img{height:50px;padding-right: 10px;}
 
-header nav{background-color:rgb(228, 153, 153);display: inline;}
-header nav ul{background-color:rgb(228, 153, 153)}
-header nav ul li{display:inline;}
+/* MITAD DERECHA HEADER */
+.botones-header{width: 60%; justify-content: space-evenly;display:flex;margin: ;}
+.botones-header a{
+  color: black;
+  text-decoration: none;
+  padding-right: 15px;
+  font-size: x-large;
+  margin: auto;
+  }
 
-h2{text-decoration: underline;font-size: xx-large;}
+/* FIN FORMATO HEADER  */
+
+/* Formato titulos*/
+h2{display:flex; align-items: center;justify-content: center;text-decoration: underline;font-size: xx-large;}
+h3{display:flex;padding-top: 20px; align-items: center;justify-content: center;text-decoration: underline;font-size: x-large;}
+
+/*BODY Y MAIN*/
+body{background-color: rgb(0, 0, 0);}
+main{align-items: center;
+  background-color: rgb(0, 0, 0);
+  color: rgb(206, 206, 206);
+min-height:1000px;
+}
+
+/*FOOTER*/
 footer{
-    background-color: rgb(77, 76, 76);
-    color: white;
-    height:100px;
-    position: sticky;
-    bottom:0
+  background-color: rgb(255, 37, 37);
+  color: black;
+  height:72px;
+  position: sticky;
+  ;
+  bottom:0;
+  
 }
-footer img{height:50px;}
-footer h4
-
-#imagentexto {
-    display: inline;
-  }
-  
-  .contenedor-imagenes {
-    display: block;
-    width: 360px;
-    height: 360px;
-    border: 2px solid black;
-  }
-  
-  .contenedor-imagenes img {
-    width: 360px;
-    height: 360px;
-  }
-  
-  .contenedor-texto {
-    display: inline-block;
-    width: 360px;
-    height: 560px;
-    border: 2px solid black;
-  }
+footer a{text-decoration: none;color: black;}
+.botones-footer {display: flex;justify-content: left;}
+.botones-footer img{height: 50px;}
 
 
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(5, 260px);
-    grid-template-rows: repeat( 260px 460px);
-  }
+/*CAMBIOS PARA MOVIL*/
+@media (max-width:1120px){
+  .contenedor-cartas{    display:none;  }
+  .imagenytexto{flex-direction: column;}
+  .texto-mitad-p p{font-size: xx-small;display: none;}
+  .card{font-size: small;}
+}
+@media (max-width:720px){
+  .botones-header{flex-direction: column;}
+  .imagen-mitad{max-width: 400px;max-height:300px;}
+  .texto-mitad{min-height:300px;max-width: 300px;}
+  .card{display: none;}
   
-  .grid .grid-item img {
-    width: 260px;
-    height: auto;
+}
+/*CSS ESPECIFICOS DE INDEX*/
+.imagenytexto{display: flex;
+margin-left: 5%;
+margin-right: 5%;
+margin-top: 1%;
+margin-bottom: 1%;
+padding:5px;
+background: rgb(102, 102, 102);
+border: 2px black solid;
+justify-content: space-around;
+border-radius: 2%;
 }
 
-.contenedor-flex{
-    display:flex;
-    background-color:brown;
-    padding:10px;
-    border:2px solid black;
-}
+.texto-mitad{width:600px;
+   justify-content: center;
+  border: 2px solid black;
+  border-radius: 2%;
+  color: rgb(189, 189, 189);
+  background-color: rgb(0, 0, 0);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 
-.contenedor-flex div {
-    background-color: white;
-    width:30px; margin: 10px;
+}
+.texto-mitad-p {width:600px;
+  justify-content: center;
+ border: 2px solid black;
+ border-radius: 2%;
+ color: rgb(189, 189, 189);
+ background-color: rgb(0, 0, 0);
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-bottom: 10px;
+
+}
+.texto-mitad p, .texto-mitad-p p{padding-top: 10px;width: 100%;align-items: center;justify-content: center;font-size: x-large;}
+.texto-mitad h3, .texto-mitad-p h3{font-size: xx-large;color:rgb(255, 37, 37) ;}
+.imagen-mitad{width: 700px;height:500px;
+border:solid 2px black;
+border-radius: 20px;
+margin-right: 10px;}
+
+/*CARTAS*/
+.card img{
+  max-height: 100%;
+  max-width:100%;
+  min-height: 60%;}
+  .contenedor-cartas{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: ;
+    margin: auto;}
+  .contenedor-cartas .card{
+    width: 330px;
+    height: 280px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 20px;
     text-align: center;
+    justify-content: center;
+    background-color:rgb(102, 102, 102);
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  
+/*FIN CSS ESPECIFICOS DE INDEX*/
+
+/* CSS ESPECIFICOS DE CONTACTO */
+.foto-contacto{display: flex;margin:auto;}
+.grid-localidades{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: rgb(194, 194, 194);
+  color: black;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 2);
+  }
+  .gridloca-1, .gridloca-2, .gridloca-3, .gridloca-4, .gridloca-5, .gridloca-6, .gridloca-7, .gridloca-8, .gridloca-9{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ }
+.gridloca-1 h4, .gridloca-2 h4, .gridloca-3 h4, .gridloca-4 h4, .gridloca-5 h4, .gridloca-6 h4, .gridloca-7 h4, .gridloca-8 h4, .gridloca-9 h4{
+  margin:0;text-decoration: underline;
 }
+.gridloca-1 p, .gridloca-2 p, .gridloca-3 p, .gridloca-4 p, .gridloca-5 p, .gridloca-6 p, .gridloca-7 p, .gridloca-8 p, .gridloca-9 p{
+  margin: 0;
+}
+.estructuracontacto{display:flex;justify-content: space-around;}
+.contenedorformulario{
+color: rgb(0, 0, 0);
+border-radius: 8px;
+box-shadow: 0px 2px 5px rgba(255, 255, 255, 2);
+background-color: rgb(194,194,194);
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+
+}
+.formulariocontacto{
+display: flex;
+flex-direction: column; 
+}
+.fabricas{width: 75%;margin: auto;}
+.localidad{margin: auto;display: flex;padding-top: 10px;}
+.foto-contacto{max-width: 80%;}
+/* FIN CSS ESPECIFICO CONTACTO*/
+
+/* CSS ESPECIFICOS DE CPU */
+.contenedor-cartas-productos{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap ;
+  margin: auto;}
+  
+.contenedor-cartas-productos .card{
+  width: 330px;
+  height: 280px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+  background-color:rgb(102, 102, 102);
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.contenedor-cartas-productos .card img{width: 100%;height: 80%;}
+.contenedor-cartas-productos .card a{text-decoration: none; color:black}
+.contenedor-cartas-productos .card a:hover{color:rgb(170, 170, 170)}
+/* FIN CSS ESPECIFICOS DE CPU */
+
+/* CSS ESPECIFICOS DE FAQ */
+.grid-faq{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: gray;
+  border-radius: 15px;
+  padding: 10px;
+}
+.grid-faq .grid-item-p{font-size: large;margin-right: 5px; background-color: rgb(141, 141, 141);padding: 10px;border-radius: 10px;height:95%;}
+.grid-faq .grid-item-r{font-size: small;margin-left: 5px; background-color: black;padding: 10px;border-radius: 10px;height:95%;}
+/* EFECTOS Y ANIMACIONES */
+.botones-header a:hover{color: white;}
+.botones-footer img:hover{background-color:rgba(0, 0, 0, 0.2);border-radius: 30%; overflow: hidden;}
+footer a:hover{color:white}
+
+/*carrusel inicio */
+
+.item-carrusel{
+height: 100%;
+position: relative;
+width: 250px;
+margin: auto;
+
+}
+.tarjeta-carrusel{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color:rgb(102, 102, 102);
+  justify-content: center
+}
+.tarjeta-carrusel img{;
+  height: 70%;
+  width: 100%;
+}
+.flechas-carrusel{
+position: absolute;
+top: 0;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+}
+.items-carrusel{
+  border-radius: 20px;
+  height: 330px;
+  width: 250px;
+  overflow: hidden;
+  margin: auto;
+}
+.flecha{height: 20px;width: 20px;}

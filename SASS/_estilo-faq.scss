@@ -1,0 +1,26 @@
+.grid-faq {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: gray;
+  border-radius: 15px;
+  padding: 10px;
+  .grid-item-p {
+    font-size: large;
+    margin-right: 5px;
+    background-color: rgb(141, 141, 141);
+    padding: 10px;
+    border-radius: 10px;
+    height: 95%;
+  }
+  .grid-item-r {
+    font-size: small;
+    margin-left: 5px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    height: 95%;
+  }
+}

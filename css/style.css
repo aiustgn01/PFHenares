@@ -1,5 +1,42 @@
 @charset "UTF-8";
 /* VARIABLE BORDES CAJAS */
+body {
+  background-color: black;
+}
+
+/*FOOTER*/
+footer {
+  background-color: rgb(255, 37, 37);
+  color: black;
+  height: 72px;
+  position: sticky;
+  bottom: 0;
+  overflow: hidden;
+  max-width: 100vw;
+  top: 20px;
+  animation-duration: 0.5s;
+  animation-name: llegar-abajo;
+  animation-iteration-count: 1;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.botones-footer img {
+  height: 50px;
+}
+.botones-footer img:hover {
+  background-color: rgba(255, 100, 80, 0.4);
+  border-radius: 30%;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
 header {
   background-color: rgb(255, 37, 37);
   border-style: inset;
@@ -43,57 +80,20 @@ header .botones-header a:hover {
   color: white;
 }
 
-/*MITAD IZQUIERDA HEADER */
-/* MITAD DERECHA HEADER */
-@keyframes llegar-izquierda {
-  0% {
-    transform: translate(-100%);
-  }
-  100% {
-    transform: translate(0%);
-  }
+main {
+  align-items: center;
+  color: rgb(206, 206, 206);
+  background-image: linear-gradient(to bottom, black, grey);
+  min-height: 1000px;
 }
-/*FOOTER*/
-footer {
-  background-color: rgb(255, 37, 37);
-  color: black;
-  height: 72px;
-  position: sticky;
-  bottom: 0;
-  overflow: hidden;
-  max-width: 100vw;
-  top: 20px;
-  animation-duration: 0.5s;
-  animation-name: llegar-derecha;
-  animation-iteration-count: 1;
-}
-footer a {
-  text-decoration: none;
-  color: black;
-}
-footer a:hover {
-  color: white;
-  transition: 0.3s;
+main::before {
+  content: "";
+  display: block;
+  position: relative;
+  height: 20px; /* Ajusta el valor según el margen superior que hayas aplicado */
+  background-color: inherit;
 }
 
-.botones-footer img {
-  height: 50px;
-}
-.botones-footer img:hover {
-  background-color: rgba(255, 100, 80, 0.4);
-  border-radius: 30%;
-  overflow: hidden;
-  transition: 0.3s;
-}
-
-@keyframes llegar-derecha {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
 .imagenytexto {
   display: flex;
   margin-left: 5%;
@@ -163,14 +163,6 @@ footer a:hover {
   margin-right: 10px;
 }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /*CARTAS*/
 .contenedor-cartas {
   width: 100%;
@@ -193,8 +185,6 @@ footer a:hover {
   color: rgb(0, 0, 0);
   text-decoration: none;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
 }
 .card h4 {
   text-decoration: none;
@@ -205,7 +195,7 @@ footer a:hover {
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
-  height: 30%;
+  height: 40%;
   justify-content: space-around;
 }
 .card img {
@@ -319,22 +309,40 @@ footer a:hover {
   box-shadow: 5px 5px 5px rgb(255, 255, 255);
 }
 
-.gridloca-1, .gridloca-2, .gridloca-3, .gridloca-4,
-.gridloca-5, .gridloca-6, .gridloca-7, .gridloca-8,
+.gridloca-1,
+.gridloca-2,
+.gridloca-3,
+.gridloca-4,
+.gridloca-5,
+.gridloca-6,
+.gridloca-7,
+.gridloca-8,
 .gridloca-9 {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.gridloca-1 h4, .gridloca-2 h4, .gridloca-3 h4, .gridloca-4 h4,
-.gridloca-5 h4, .gridloca-6 h4, .gridloca-7 h4, .gridloca-8 h4,
+.gridloca-1 h4,
+.gridloca-2 h4,
+.gridloca-3 h4,
+.gridloca-4 h4,
+.gridloca-5 h4,
+.gridloca-6 h4,
+.gridloca-7 h4,
+.gridloca-8 h4,
 .gridloca-9 h4 {
   margin: 0;
   text-decoration: underline;
 }
-.gridloca-1 p, .gridloca-2 p, .gridloca-3 p, .gridloca-4 p,
-.gridloca-5 p, .gridloca-6 p, .gridloca-7 p, .gridloca-8 p,
+.gridloca-1 p,
+.gridloca-2 p,
+.gridloca-3 p,
+.gridloca-4 p,
+.gridloca-5 p,
+.gridloca-6 p,
+.gridloca-7 p,
+.gridloca-8 p,
 .gridloca-9 p {
   margin: 0;
 }
@@ -479,10 +487,6 @@ position .tarjeta-carrusel a:hover {
   box-sizing: border-box;
 }
 
-body {
-  background-color: black;
-}
-
 /* Formato titulos*/
 h2 {
   display: flex;
@@ -511,41 +515,40 @@ h4 {
   font-size: large;
 }
 
-/*BODY Y MAIN*/
-main {
-  align-items: center;
-  color: rgb(206, 206, 206);
-  background-image: linear-gradient(to bottom, black, grey);
-  min-height: 1000px;
-}
-main::before {
-  content: "";
-  display: block;
-  position: relative;
-  height: 20px; /* Ajusta el valor según el margen superior que hayas aplicado */
-  background-color: inherit;
+.aparecer {
+  animation-duration: 1s;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
 }
 
-/*CAMBIOS PARA MOVIL*/
-@media (max-width: 1120px) {
-  .contenedor-cartas, .contenedor-cartas-productos {
-    display: none;
+@keyframes llegar-abajo {
+  0% {
+    transform: translateY(100%);
   }
-  .texto-mitad-p {
-    max-width: 300px;
+  100% {
+    transform: translateY(0%);
   }
-  .imagenytexto {
-    flex-direction: column;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
   }
-  .texto-mitad-p p {
-    font-size: xx-small;
-    display: none;
+  100% {
+    opacity: 1;
   }
-  .card {
-    font-size: small;
+}
+@keyframes llegar-izquierda {
+  0% {
+    transform: translate(-100%);
   }
-  .items-carrusel {
-    margin-top: 10px;
+  100% {
+    transform: translate(0%);
+  }
+}
+@media (max-width: 400px) {
+  .imagen-mitad {
+    max-width: 250px;
+    max-height: 200px;
   }
 }
 @media (max-width: 720px) {
@@ -566,6 +569,32 @@ main::before {
   }
   .logo {
     min-width: 50%;
+  }
+  .grid-localidades {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1120px) {
+  .contenedor-cartas,
+  .contenedor-cartas-productos {
+    display: none;
+  }
+  .texto-mitad-p {
+    max-width: 300px;
+  }
+  .imagenytexto {
+    flex-direction: column;
+  }
+  .texto-mitad-p p {
+    font-size: xx-small;
+    display: none;
+  }
+  .card {
+    font-size: small;
+  }
+  .items-carrusel {
+    margin-top: 10px;
   }
 }
 @media (min-width: 1120px) {
@@ -595,17 +624,6 @@ main::before {
     display: none;
     pointer-events: none;
   }
-}
-@media (max-width: 400px) {
-  .imagen-mitad {
-    max-width: 250px;
-    max-height: 200px;
-  }
-}
-.aparecer {
-  animation-duration: 1s;
-  animation-name: aparecer;
-  animation-iteration-count: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

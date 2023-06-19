@@ -195,7 +195,7 @@ main::before {
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
-  height: 40%;
+  height: 30%;
   justify-content: space-around;
 }
 .card img {

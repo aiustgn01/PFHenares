@@ -1,0 +1,14 @@
+main {
+  align-items: center;
+
+  color: rgb(206, 206, 206);
+  background-image: linear-gradient(to bottom, black, grey);
+  min-height: 1000px;
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    height: 20px; /* Ajusta el valor según el margen superior que hayas aplicado */
+    background-color: inherit;
+  }
+}

@@ -1,0 +1,22 @@
+@media (max-width: 1120px) {
+  .contenedor-cartas,
+  .contenedor-cartas-productos {
+    display: none;
+  }
+  .texto-mitad-p {
+    max-width: 300px;
+  }
+  .imagenytexto {
+    flex-direction: column;
+  }
+  .texto-mitad-p p {
+    font-size: xx-small;
+    display: none;
+  }
+  .card {
+    font-size: small;
+  }
+  .items-carrusel {
+    margin-top: 10px;
+  }
+}

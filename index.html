@@ -16,17 +16,18 @@
         <h1>Advanced Micro Devices</h1>
         <!--BOTONES-->
       </div>
-      <div class="botones-header">
-        <a href="./index.html" class="boton">Inicio</a>
-        <a href="./pages/contact.html" class="boton">Contacto</a>
-        <a href="./pages/cpu.html" class="boton">CPUs</a>
-        <a href="./pages/gpu.html" class="boton">GPUs</a>
-        <a href="./pages/faq.html" class="boton">Preguntas Frecuentes</a>
+            <div class="botones-header">
+        <a href="./index.html" class="boton"><p>Inicio</p></a>
+        <a href="./pages/contact.html" class="boton"><p>Contacto</p></a>
+        <a href="./pages/cpu.html" class="boton"><p>CPUs</p></a>
+        <a href="./pages/gpu.html" class="boton"><p>CPUs</p></a>
+        <a href="./pages/faq.html" class="boton"><p>Preguntas Frecuentes</p></a>
       </div>
     </header>
 
     <main>
       <!-- IMAGEN CON TEXTO DEBAJO DEL HEADER -->
+      <div></div>
       <div class="imagenytexto">
         <div>
           <img class="imagen-mitad" src="./images/amd-foto.jpg" alt="" />
@@ -39,161 +40,236 @@
           </p>
         </section>
       </div>
-      <h2>PRODUCTOS DESTACADOS</h2>
- 
-        <!-- CARTAS ESCRITORIO PRODUCTOS DESTACADOS-->
-        <div class="contenedor-cartas">
-          <div class="card">
-            <img src="./images/AMD RYZEN LOGO2.png" />
+      <h2 class="aparecer">PRODUCTOS DESTACADOS</h2>
+
+      <!-- CARTAS ESCRITORIO PRODUCTOS DESTACADOS-->
+      <div class="contenedor-cartas aparecer">
+        <div class="card">
+          <img src="./images/AMD RYZEN LOGO2.png" />
+          <div class="texto-carta">
             <h4>Procesadores Ryzen de uso doméstico</h4>
             <p></p>
             <a href="./pages/cpu.html">Leer más</a>
           </div>
-          <div class="card">
-            <img src="./images/AMD RADEON LOGO2.png" />
+        </div>
+        <div class="card">
+          <img src="./images/AMD RADEON LOGO2.png" />
+          <div class="texto-carta">
             <h4>Tarjetas de video Gaming RX</h4>
             <p></p>
             <a href="./pages/gpu.html">Leer más</a>
           </div>
-          <div class="card">
-            <img src="./images/AMD EPYC LOGO2.png" />
+        </div>
+        <div class="card">
+          <img src="./images/AMD EPYC LOGO2.png" />
+          <div class="texto-carta">
             <h4>Procesadores EPYC para Servidores</h4>
             <p></p>
             <a href="">Leer más</a>
           </div>
         </div>
-        <!-- CARRUSEL MOVIL PRODUCTOS DESTACADOS-->
-        <div class="items-carrusel">
-          <div class="item-carrusel" id="item-carrusel1">
-            <div class="tarjeta-carrusel" id="tarjeta-carrusel1">
-              <img src="./images/AMD RYZEN LOGO2.png" />
+      </div>
+      <!-- CARRUSEL MOVIL PRODUCTOS DESTACADOS-->
+      <div class="items-carrusel">
+        <div class="item-carrusel" id="item-carrusel1">
+          <div class="tarjeta-carrusel" id="tarjeta-carrusel1">
+            <img src="./images/AMD RYZEN LOGO2.png" />
+            <div class="texto-carta">
               <h4>Procesadores Ryzen de uso doméstico</h4>
               <p></p>
               <a href="./pages/cpu.html">Leer más</a>
             </div>
-            <div class="flechas-carrusel">
-              <a href="#item-carrusel3"><img src="images/left-arrow2.png" class="flecha"></a>
-              <a href="#item-carrusel2"><img src="images/right-arrow2.png"class="flecha"></a>
-            </div>
           </div>
-          <div class="item-carrusel" id="item-carrusel2">
-            <div class="tarjeta-carrusel" id="tarjeta-carrusel2">
-              <img src="./images/AMD RADEON LOGO2.png" />
+          <div class="flechas-carrusel">
+            <a href="#item-carrusel3"
+              ><img src="images/left-arrow2.png" class="flecha"
+            /></a>
+            <a href="#item-carrusel2"
+              ><img src="images/right-arrow2.png" class="flecha"
+            /></a>
+          </div>
+        </div>
+        <div class="item-carrusel" id="item-carrusel2">
+          <div class="tarjeta-carrusel" id="tarjeta-carrusel2">
+            <img src="./images/AMD RADEON LOGO2.png" />
+            <div class="texto-carta">
               <h4>Tarjetas de video Gaming RX</h4>
               <p></p>
               <a href="./pages/gpu.html">Leer más</a>
             </div>
-            <div class="flechas-carrusel">
-              <a href="#item-carrusel1"><img src="images/left-arrow2.png" class="flecha"></a>
-              <a href="#item-carrusel3"><img src="images/right-arrow2.png"class="flecha"></a>
-            </div>
           </div>
-          <div class="item-carrusel" id="item-carrusel3">
-            <div class="tarjeta-carrusel" id="tarjeta-carrusel3">
-              <img src="./images/AMD EPYC LOGO2.png" />
+          <div class="flechas-carrusel">
+            <a href="#item-carrusel1"
+              ><img src="images/left-arrow2.png" class="flecha"
+            /></a>
+            <a href="#item-carrusel3"
+              ><img src="images/right-arrow2.png" class="flecha"
+            /></a>
+          </div>
+        </div>
+        <div class="item-carrusel" id="item-carrusel3">
+          <div class="tarjeta-carrusel" id="tarjeta-carrusel3">
+            <img src="./images/AMD EPYC LOGO2.png" />
+            <div class="texto-carta">
               <h4>Procesadores EPYC para Servidores</h4>
               <p></p>
               <a href="">Leer más</a>
             </div>
-            <div class="flechas-carrusel">
-              <a href="#item-carrusel2"><img src="images/left-arrow2.png" class="flecha"></a>
-              <a href="#item-carrusel1"><img src="images/right-arrow2.png"class="flecha"></a>
-            </div>
+          </div>
+          <div class="flechas-carrusel">
+            <a href="#item-carrusel2"
+              ><img src="images/left-arrow2.png" class="flecha"
+            /></a>
+            <a href="#item-carrusel1"
+              ><img src="images/right-arrow2.png" class="flecha"
+            /></a>
           </div>
         </div>
-      
-        <!-- CARTAS ESCRITROIO NOTICIAS RECIENTES-->
-        <h3>Noticias Recientes</h3>
-        <div class="contenedor-cartas">
-          <div class="card">
-            <img src="./images/amd-zen5.png" />
-            <h4>El primer procesador AMD de próxima generación ya está en el horno</h4>
-          <a href="https://hardzone.es/noticias/procesadores/primer-amd-zen-5/">Leer más</a>
-          </div>
+      </div>
 
-          <div class="card">
+      <!-- CARTAS ESCRITROIO NOTICIAS RECIENTES-->
+      <h3>Noticias Recientes</h3>
+      <div class="contenedor-cartas">
+        <div class="card">
+          <img src="./images/amd-zen5.png" />
+          <div class="texto-carta">
+            <h4>
+              El primer procesador AMD de próxima generación ya está en el horno
+            </h4>
+            <a
+              href="https://hardzone.es/noticias/procesadores/primer-amd-zen-5/"
+              >Leer más</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./images/RX7900-noticia.jpg" />
+          <div class="texto-carta">
+            <h4>
+              La AMD Radeon RX 7900 XT alcanza los 799€ en Europa: -24% vs PVP
+            </h4>
+            <p></p>
+            <a
+              href="https://elchapuzasinformatico.com/2023/06/amd-radeon-rx-7900-xt-precio-minimo-europa/"
+              >Leer más</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./images/6950xt-noticia.jpg" />
+          <div class="texto-carta">
+            <h4>
+              En Coolmod tienes la Radeon RX 6950 XT de AMD a su precio más bajo
+              de todos los tiempos
+            </h4>
+            <p></p>
+            <a
+              href="https://www.3djuegospc.com/tarjetas-graficas/coolmod-tienes-radeon-rx-6950-xt-amd-a-su-precio-todos-tiempos-hazte-opcion-economica-para-jugar-a-4k-oferta"
+              >Leer más</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./images/Ryzen 8000.png" />
+          <div class="texto-carta">
+            <h4>AMD ya tiene un plan con el que desbancar a Intel en 2024</h4>
+            <p></p>
+            <a href="https://hardzone.es/noticias/procesadores/amd-zen-5/"
+              >Leer más</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- CARRUSEL MOVIL NOTICIAS RECIENTES-->
+      <div class="items-carrusel">
+        <div class="item-carrusel" id="item-carrusel4">
+          <div class="tarjeta-carrusel" id="tarjeta-carrusel4">
+            <img src="./images/amd-zen5.png" />
+            <div class="texto-carta">
+              <h4>
+                El primer procesador AMD de próxima generación ya está en el
+                horno
+              </h4>
+              <a
+                href="https://hardzone.es/noticias/procesadores/primer-amd-zen-5/"
+                >Leer más</a
+              >
+            </div>
+          </div>
+          <div class="flechas-carrusel">
+            <a href="#item-carrusel7"
+              ><img src="images/left-arrow2.png" class="flecha"
+            /></a>
+            <a href="#item-carrusel5"
+              ><img src="images/right-arrow2.png" class="flecha"
+            /></a>
+          </div>
+        </div>
+        <div class="item-carrusel" id="item-carrusel5">
+          <div class="tarjeta-carrusel" id="tarjeta-carrusel5">
             <img src="./images/RX7900-noticia.jpg" />
             <h4>
               La AMD Radeon RX 7900 XT alcanza los 799€ en Europa: -24% vs PVP
             </h4>
             <p></p>
-            <a href="https://elchapuzasinformatico.com/2023/06/amd-radeon-rx-7900-xt-precio-minimo-europa/">Leer más</a>
+            <a
+              href="https://elchapuzasinformatico.com/2023/06/amd-radeon-rx-7900-xt-precio-minimo-europa/"
+              >Leer más</a
+            >
           </div>
-
-          <div class="card">
+          <div class="flechas-carrusel">
+            <a href="#item-carrusel4"
+              ><img src="images/left-arrow2.png" class="flecha"
+            /></a>
+            <a href="#item-carrusel6"
+              ><img src="images/right-arrow2.png" class="flecha"
+            /></a>
+          </div>
+        </div>
+        <div class="item-carrusel" id="item-carrusel6">
+          <div class="tarjeta-carrusel" id="tarjeta-carrusel6">
             <img src="./images/6950xt-noticia.jpg" />
             <h4>
               En Coolmod tienes la Radeon RX 6950 XT de AMD a su precio más bajo
               de todos los tiempos
             </h4>
             <p></p>
-            <a href="https://www.3djuegospc.com/tarjetas-graficas/coolmod-tienes-radeon-rx-6950-xt-amd-a-su-precio-todos-tiempos-hazte-opcion-economica-para-jugar-a-4k-oferta">Leer más</a>
+            <a
+              href="https://www.3djuegospc.com/tarjetas-graficas/coolmod-tienes-radeon-rx-6950-xt-amd-a-su-precio-todos-tiempos-hazte-opcion-economica-para-jugar-a-4k-oferta"
+              >Leer más</a
+            >
           </div>
-
-          <div class="card">
+          <div class="flechas-carrusel">
+            <a href="#item-carrusel5"
+              ><img src="images/left-arrow2.png" class="flecha"
+            /></a>
+            <a href="#item-carrusel7"
+              ><img src="images/right-arrow2.png" class="flecha"
+            /></a>
+          </div>
+        </div>
+        <div class="item-carrusel" id="item-carrusel7">
+          <div class="tarjeta-carrusel" id="tarjeta-carrusel7">
             <img src="./images/Ryzen 8000.png" />
             <h4>AMD ya tiene un plan con el que desbancar a Intel en 2024</h4>
             <p></p>
-            <a href="https://hardzone.es/noticias/procesadores/amd-zen-5/">Leer más</a>
+            <a href="https://hardzone.es/noticias/procesadores/amd-zen-5/"
+              >Leer más</a
+            >
+          </div>
+          <div class="flechas-carrusel">
+            <a href="#item-carrusel6"
+              ><img src="images/left-arrow2.png" class="flecha"
+            /></a>
+            <a href="#item-carrusel4"
+              ><img src="images/right-arrow2.png" class="flecha"
+            /></a>
           </div>
         </div>
-        <!-- CARRUSEL MOVIL NOTICIAS RECIENTES-->
-        <div class="items-carrusel">
-          <div class="item-carrusel" id="item-carrusel4">
-            <div class="tarjeta-carrusel" id="tarjeta-carrusel4">
-              <img src="./images/amd-zen5.png" />
-              <h4>El primer procesador AMD de próxima generación ya está en el horno</h4>
-             <a href="https://hardzone.es/noticias/procesadores/primer-amd-zen-5/">Leer más</a>
-            </div>
-            <div class="flechas-carrusel">
-              <a href="#item-carrusel7"><img src="images/left-arrow2.png" class="flecha"></a>
-              <a href="#item-carrusel5"><img src="images/right-arrow2.png"class="flecha"></a>
-            </div>
-          </div>
-          <div class="item-carrusel" id="item-carrusel5">
-            <div class="tarjeta-carrusel" id="tarjeta-carrusel5">
-              <img src="./images/RX7900-noticia.jpg" />
-              <h4>
-                La AMD Radeon RX 7900 XT alcanza los 799€ en Europa: -24% vs PVP
-              </h4>
-              <p></p>
-              <a href="https://elchapuzasinformatico.com/2023/06/amd-radeon-rx-7900-xt-precio-minimo-europa/">Leer más</a>
-            </div>
-            <div class="flechas-carrusel">
-              <a href="#item-carrusel4"><img src="images/left-arrow2.png" class="flecha"></a>
-              <a href="#item-carrusel6"><img src="images/right-arrow2.png"class="flecha"></a>
-            </div>
-          </div>
-          <div class="item-carrusel" id="item-carrusel6">
-            <div class="tarjeta-carrusel" id="tarjeta-carrusel6">
-              <img src="./images/6950xt-noticia.jpg" />
-              <h4>
-                En Coolmod tienes la Radeon RX 6950 XT de AMD a su precio más
-                bajo de todos los tiempos
-              </h4>
-              <p></p>
-              <a href="https://www.3djuegospc.com/tarjetas-graficas/coolmod-tienes-radeon-rx-6950-xt-amd-a-su-precio-todos-tiempos-hazte-opcion-economica-para-jugar-a-4k-oferta">Leer más</a
-              >
-            </div>
-            <div class="flechas-carrusel">
-              <a href="#item-carrusel5"><img src="images/left-arrow2.png" class="flecha"></a>
-              <a href="#item-carrusel7"><img src="images/right-arrow2.png"class="flecha"></a>
-            </div>
-          </div>
-          <div class="item-carrusel" id="item-carrusel7">
-            <div class="tarjeta-carrusel" id="tarjeta-carrusel7">
-              <img src="./images/Ryzen 8000.png" />
-              <h4>AMD ya tiene un plan con el que desbancar a Intel en 2024</h4>
-              <p></p>
-              <a href="https://hardzone.es/noticias/procesadores/amd-zen-5/">Leer más</a>
-            </div>
-            <div class="flechas-carrusel">
-              <a href="#item-carrusel6"><img src="images/left-arrow2.png" class="flecha"></a>
-              <a href="#item-carrusel4"><img src="images/right-arrow2.png"class="flecha"></a>
-            </div>
-          </div>
-        </div>
-     
+      </div>
     </main>
     <footer>
       <div class="botones-footer">

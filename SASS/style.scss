@@ -17,14 +17,17 @@ $bnegro:2px black solid;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  
 }
-
+body{
+  background-color:black;
+}
 
 /* Formato titulos*/
 h2 {
   display: flex;
   align-items: center;
-  justify-content: center;
+  text-align: center;
   text-decoration: underline;
   font-size: xx-large;
 }
@@ -32,20 +35,35 @@ h3 {
   display: flex;
   padding-top: 20px;
   align-items: center;
-  justify-content: center;
+  text-align: center;
+  justify-content:center;
   text-decoration: underline;
   font-size: x-large;
 }
+h4 {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  text-align: center;
+  text-decoration: underline;
+  font-size: large;
+}
 
 /*BODY Y MAIN*/
-body {
-  background-color: rgb(0, 0, 0);
-}
+
 main {
   align-items: center;
-  background-color: rgb(0, 0, 0);
+ 
   color: rgb(206, 206, 206);
+  background-image: linear-gradient(to bottom, black, grey);
   min-height: 1000px;
+  &::before{
+    content: "";
+    display: block;
+    position: relative;
+    height: 20px; /* Ajusta el valor según el margen superior que hayas aplicado */
+    background-color:inherit;
+  }
 }
 
 
@@ -54,8 +72,12 @@ main {
   .contenedor-cartas, .contenedor-cartas-productos {
     display: none;
   }
+  .texto-mitad-p{
+    max-width: 300px;
+  }
   .imagenytexto {
     flex-direction: column;
+    
   }
   .texto-mitad-p p {
     font-size: xx-small;
@@ -64,11 +86,13 @@ main {
   .card {
     font-size: small;
   }
-  .items-carrusel{margin-top: 20px;}
+  .items-carrusel{margin-top:10px;}
+  footer{margin-top: 20px;}
 }
 @media (max-width: 720px) {
   .botones-header {
     flex-direction: column;
+   max-width: 60%;
   }
   .imagen-mitad {
     max-width: 400px;
@@ -81,6 +105,8 @@ main {
   .card {
     display: none;
   }
+  .logo{min-width: 50%;}
+  
 }
 @media (min-width:1120px){
   .flechas-carrusel {
@@ -108,10 +134,22 @@ main {
     position: top;
     z-index: 10;
     display: none;
+    pointer-events: none;
   }
 
 }
+@media (max-width: 400px) {
+  .imagen-mitad{
+    max-width: 250px;
+    max-height: 200px;
+  }
+ 
+}
 
-
+.aparecer{
+  animation-duration:1s;
+  animation-name: aparecer;
+  animation-iteration-count:1;  
+}
 
 

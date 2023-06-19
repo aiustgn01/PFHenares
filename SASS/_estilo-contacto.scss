@@ -1,6 +1,9 @@
 .foto-contacto {
     display: flex;
     margin: auto;
+    animation-duration:1s;
+    animation-name: aparecer;
+    animation-iteration-count:1;  
   }
   .grid-localidades {
     display: grid;

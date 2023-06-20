@@ -4,9 +4,13 @@
   animation-duration: 1s;
   animation-name: aparecer;
   animation-iteration-count: 1;
+  border-radius: 20px;
+  border: $bnegro;
+
 }
 .grid-localidades {
   display: grid;
+
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   background-color: rgb(194, 194, 194);

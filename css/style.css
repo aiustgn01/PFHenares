@@ -60,7 +60,7 @@ header .logo img {
   padding-right: 10px;
 }
 header .botones-header {
-  width: 70%;
+  width: 60%;
   height: 100%;
   overflow: hidden;
   display: flex;
@@ -99,7 +99,7 @@ main::before {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 1%;
-  padding: 5px;
+  padding: 0.5%;
   background: rgb(102, 102, 102);
   border: 2px black solid;
   justify-content: space-around;
@@ -110,7 +110,8 @@ main::before {
 }
 
 .texto-mitad {
-  width: 600px;
+  width: 48%;
+  min-height: 80%;
   justify-content: center;
   border: 2px black solid;
   border-radius: 2%;
@@ -123,6 +124,7 @@ main::before {
 .texto-mitad p {
   padding-top: 10px;
   width: 100%;
+  min-height: 100%;
   align-items: center;
   justify-content: center;
   font-size: x-large;
@@ -156,11 +158,16 @@ main::before {
 }
 
 .imagen-mitad {
-  width: 700px;
-  height: 500px;
-  border: 2px black solid;
+  width: 48%;
+  height: 50%;
+}
+.imagen-mitad img {
+  height: 100%;
+  width: 100%;
   border-radius: 20px;
-  margin-right: 10px;
+  border: 2px black solid;
+  margin: 0px;
+  padding: 0px;
 }
 
 /*CARTAS*/
@@ -185,6 +192,8 @@ main::before {
   color: rgb(0, 0, 0);
   text-decoration: none;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .card h4 {
   text-decoration: none;
@@ -295,6 +304,8 @@ main::before {
   animation-duration: 1s;
   animation-name: aparecer;
   animation-iteration-count: 1;
+  border-radius: 20px;
+  border: 2px black solid;
 }
 
 .grid-localidades {
@@ -455,8 +466,8 @@ position .tarjeta-carrusel a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
   background-color: gray;
   border-radius: 15px;
   padding: 10px;
@@ -550,19 +561,14 @@ h4 {
     max-width: 250px;
     max-height: 200px;
   }
+  .botones-header {
+    max-width: 150px;
+  }
 }
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .botones-header {
     flex-direction: column;
     max-width: 60%;
-  }
-  .imagen-mitad {
-    max-width: 400px;
-    max-height: 300px;
-  }
-  .texto-mitad {
-    min-height: 300px;
-    max-width: 300px;
   }
   .card {
     display: none;
@@ -595,6 +601,15 @@ h4 {
   }
   .items-carrusel {
     margin-top: 10px;
+  }
+  .imagen-mitad {
+    height: 10%;
+    width: 80%;
+    margin: 5px;
+  }
+  .texto-mitad {
+    width: 80%;
+    margin: 5px;
   }
 }
 @media (min-width: 1120px) {

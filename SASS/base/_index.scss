@@ -151,6 +151,7 @@
   background-color: rgb(102, 102, 102);
   justify-content: center;
   z-index: -1;
+  overflow: hidden;
   .texto-carta {
     min-height: 30%;
     text-justify: center;
@@ -194,7 +195,7 @@
   height: 330px;
   width: 250px;
   left:1250;
-  overflow: scroll;
+  overflow: hidden;
   margin: auto;
   justify-content: center;
   align-items: center;

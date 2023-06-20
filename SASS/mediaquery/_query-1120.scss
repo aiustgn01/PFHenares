@@ -8,6 +8,7 @@
   }
   .imagenytexto {
     flex-direction: column;
+    justify-content: center;
   }
   .texto-mitad-p p {
     font-size: xx-small;
@@ -20,9 +21,12 @@
     margin-top: 10px;
   }
   .imagen-mitad {
-  height: 10%;
+  height: 50%;
    width: 80%;
   margin: 5px;
+  img{ height: 100%;
+    width: 100%;
+   margin: 5px;}
 
   }
   .texto-mitad{

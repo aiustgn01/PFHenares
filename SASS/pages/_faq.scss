@@ -4,21 +4,23 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin-left: 5%;
   margin-right: 5%;
-  background-color: gray;
+  background-color: $color3;
   border-radius: 15px;
   padding: 10px;
   .grid-item-p {
     font-size: large;
-    margin-right: 5px;
-    background-color: rgb(141, 141, 141);
+    margin-right: 5px;  
+    background-color: $color2;
     padding: 10px;
     border-radius: 10px;
     height: 95%;
+    color: $color4;
   }
   .grid-item-r {
     font-size: small;
     margin-left: 5px;
-    background-color: black;
+    color: $color2;
+    background-color: $color4;
     padding: 10px;
     border-radius: 10px;
     height: 95%;

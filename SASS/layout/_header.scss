@@ -1,9 +1,8 @@
 header {
-  background-color: rgb(255, 37, 37);
+  background-color:$color1;
   border-style: inset;
-  border-color: black;
+  border-color: $color4;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   animation-duration: 0.6s;
   animation-name: llegar-izquierda;
@@ -14,9 +13,20 @@ header {
     display: flex;
     padding: 5px;
     justify-content: space-around;
+    h1{
+      margin-left: 10px;
+    }
+    .amd-icono{
+    height: 50px;
+    width: 50px;
+    background-image:url(../icon/amd_icon_inverted.png)}
     img {
+      
       height: 50px;
-      padding-right: 10px;
+      width: 50px;
+      
+      &:hover{transition: 0.2s;
+        opacity: 0%;}
     }
   }
   .botones-header {
@@ -35,7 +45,7 @@ header {
         justify-content: center;
       }
 
-      &:hover {
+      &:hover {transition: .5s ease;
         color: white;
       }
     }

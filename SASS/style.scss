@@ -1,83 +1,16 @@
 /* VARIABLE BORDES CAJAS */
-$bnegro: 2px black solid;
-
+@import "./variables/variables.scss";
+@import "./Utilities/animations.scss";
+@import "./layout/html";
 @import "./layout/body";
 @import "./layout/footer";
 @import "./layout/header";
 @import "./layout/main";
+@import "./pages/index";
+@import "./pages/contact";
+@import "./pages/cpu-gpu";
+@import "./pages/faq";
 
-
-@import "./base/index";
-@import "./base/contact";
-@import "./base/cpu-gpu";
-@import "./base/faq";
-
-* {
-  margin: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  list-style: none;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  scroll-behavior:smooth ;
-}
-/* Formato titulos*/
-h2 {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-decoration: underline;
-  font-size: xx-large;
-}
-h3 {
-  display: flex;
-  padding-top: 20px;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  text-decoration: underline;
-  font-size: x-large;
-}
-h4 {
-  display: flex;
-  padding-top: 20px;
-  align-items: center;
-  text-align: center;
-  text-decoration: underline;
-  font-size: large;
-}
-
-.aparecer {
-  animation-duration: 1s;
-  animation-name: aparecer;
-  animation-iteration-count: 1;
-}
-
-@keyframes llegar-abajo {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes llegar-izquierda {
-  0% {
-    transform: translate(-100%);
-  }
-  100% {
-    transform: translate(0%);
-  }
-}
 
 
 

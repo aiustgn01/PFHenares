@@ -1,8 +1,7 @@
 main {
   align-items: center;
-
-  color: rgb(206, 206, 206);
-  background-image: linear-gradient(to bottom, black, grey);
+  color: $color1;
+  background-image:$gradientepagina;
   min-height: 1000px;
   &::before {
     content: "";

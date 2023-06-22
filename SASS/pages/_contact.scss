@@ -1,24 +1,32 @@
 .foto-contacto {
   display: flex;
-  margin: auto;
+  margin-left:20%;
+  margin-right: 20%;
   animation-duration: 1s;
   animation-name: aparecer;
   animation-iteration-count: 1;
   border-radius: 20px;
-  border: $bnegro;
+  border: $borde1;
 
-}
+  img{height: 100%;
+width: 100%;
+border-radius: 18px;
+  }
+&:hover{margin-left: 18%;
+margin-right: 18%;
+border: $bordes2;}
+transition: 0.6s;}
 .grid-localidades {
   display: grid;
 
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: rgb(194, 194, 194);
-  color: black;
+  background-color:$color3;
+  color: $color4;
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 8px;
-  box-shadow: 5px 5px 5px rgba(255, 255, 255, 2);
+  box-shadow: $sombra-cajas;
 }
 .gridloca-1,
 .gridloca-2,
@@ -33,8 +41,10 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: $color4;
   h4 {
     margin: 0;
+    color: $color4;
     text-decoration: underline;
   }
   p {
@@ -46,10 +56,10 @@
   justify-content: space-around;
 }
 .contenedorformulario {
-  color: rgb(0, 0, 0);
+  color: $color4;
   border-radius: 8px;
-  box-shadow: 0px 2px 5px rgba(255, 255, 255, 2);
-  background-color: rgb(194, 194, 194);
+  box-shadow: $sombra-cajas;
+  background-color: $color3;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -68,6 +78,4 @@
   display: flex;
   padding-top: 10px;
 }
-.foto-contacto {
-  max-width: 80%;
-}
+

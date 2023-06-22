@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+h2 {
+    color: $color2;
+    text-align: center;
+    text-decoration: underline;
+    font-size: xx-large;
+  }
+  h3 {
+    color: $color2;
+    text-align: center;
+    text-decoration: underline;
+    font-size: x-large;
+  }
+  h4 {
+    color: $color2;
+    text-align: center;
+    text-decoration: underline;
+    font-size: large;
+  }
+  

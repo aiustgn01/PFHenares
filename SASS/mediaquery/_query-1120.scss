@@ -1,36 +1,40 @@
-@media (max-width: 1120px) {
+@media (max-width: 1120px) and (min-width:851px) {
+  /* INDEX, GPU, CPU*/
   .contenedor-cartas,
   .contenedor-cartas-productos {
     display: none;
   }
-  .texto-mitad-p {
-    max-width: 300px;
-  }
   .imagenytexto {
     flex-direction: column;
-    justify-content: center;
-  }
-  .texto-mitad-p p {
-    font-size: xx-small;
-    display: none;
-  }
+    height: 80vh;
+    .texto-mitad{height: max-content;width: 85%;}
+    .imagen-mitad {
+      max-height: 80%;
+      width: 85%;
+      margin: 5px;
+    }
+      }
+  .imagenytexto:not(:hover) {
+    margin-left: 10%;
+ margin-right: 10%;
+ }
+  .imagenytexto:hover {
+    margin-left: 8%;
+ margin-right: 8%;
+ height: 83vh
+ }
+
+
   .card {
     font-size: small;
   }
   .items-carrusel {
     margin-top: 10px;
   }
-  .imagen-mitad {
-  height: 50%;
-   width: 80%;
-  margin: 5px;
-  img{ height: 100%;
-    width: 100%;
-   margin: 5px;}
-
-  }
+ 
   .texto-mitad{
     width: 80%;
     margin: 5px;
   }
+  .grid-localidades{width: 80%;}
 }

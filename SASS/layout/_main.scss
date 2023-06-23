@@ -3,6 +3,7 @@ main {
   color: $color1;
   background-image:$gradientepagina;
   min-height: 1000px;
+  padding-bottom: 20px;
   &::before {
     content: "";
     display: block;

@@ -1,9 +1,14 @@
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+  .contenedor-cartas,
+  .contenedor-cartas-productos {
+    display: none;
+  }
+  .grid-faq .grid-item-r {font-size: small;}
+  .grid-localidades{height: fit-content;}
   .botones-header {
     flex-direction: column;
     max-width: 60%;
   }
-
   .card {
     display: none;
   }
@@ -13,8 +18,30 @@
   .grid-localidades{
     display: flex;
     flex-direction: column;
+    width: 70%;
+    font-size: medium;
   }
   .footer{
     flex-direction: row
   }
+  .imagenytexto {
+    flex-direction: column;
+    height: 65vh;
+    .texto-mitad{height: max-content;width: 80%;}
+    .imagen-mitad {
+      max-height: 80%;
+      width: 80%;
+      margin: 5px;
+    }
+      }
+  .imagenytexto:not(:hover) {
+    margin-left: 5%;
+ margin-right: 5%;
+ }
+  .imagenytexto:hover {
+    margin-left: 2%;
+ margin-right: 2%;
+ height: 68vh
+ }
+ 
 }

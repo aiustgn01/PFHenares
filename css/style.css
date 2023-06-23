@@ -1,19 +1,17 @@
 @charset "UTF-8";
-/* VARIABLE BORDES CAJAS */
+/*IDEAS SIN REALIZAR / PROBLEMAS SIN SOLUCIONAR POR FALTA DE TIEMPO:
+1- AGRANDAR CARRUSELES CON HOVER
+2- HACER QUE TODAS LAS IMAGENES TENGAN EL "ZOOM" DEL CARRUSEL DEL INDEX
+3- IMPLEMENTAR BOTON "VER MAS" EN CARDS Y CARRUSELES DE GPU/CPU CON INFORMACION DE CADA PRODUCTO
+(HARIAN VISIBLE UN DIV CON DISPLAY:HIDDEN Y POSITION:ABSOLUTE)
+4- INDICE DE PREGUNTAS DE FAQ Y SUBIR LA CANTIDAD DE PREGUNTAS A 20 PARA DARLE UNA FUNCION REAL AL INDICE
+5- AGREGAR UNA LEYENDA CON POSITION:ABSOLUTE Y DISPLAY:HIDDEN EN LA IMAGEN DE CONTACTO
+6- ENCONTRARLE UNA SOLUCION PARA QUE LOS CARRUSELES EMPIECEN DESDE EL ITEM 1 SIN UNA TARJETA 0*/
 /* COLOR HEADER, COLOR MAS LLAMATIVO DE LA PAGINA */
 /* COLOR SECUNDARIO, DEBERIA COMPLOMENTAR AL COLOR 1 */
 /* COLOR DE TEXTO/FONDO CLAROS PARA TEXTO/FONDOS OSCUROS*/
 /* COLOR DE TEXTO/FONDO OSCUROS PARA TEXTO/FONDOS CLAROS*/
-* {
-  margin: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  list-style: none;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
+/* COLOR PARA ENLACES */
 .aparecer {
   animation-duration: 1s;
   animation-name: aparecer;
@@ -51,6 +49,7 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -173,6 +172,7 @@ main {
   color: rgb(255, 37, 37);
   background-image: linear-gradient(to bottom, black, grey);
   min-height: 1000px;
+  padding-bottom: 20px;
 }
 main::before {
   content: "";
@@ -184,63 +184,63 @@ main::before {
 
 /* CONTENEDOR IMAGEN + TEXTO */
 .imagenytexto {
+  height: 50vh;
   display: flex;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 1%;
   padding: 0.5%;
   background: rgb(135, 135, 135);
   border: 2px black solid;
-  justify-content: space-evenly;
-  align-items: center;
   border-radius: 2%;
   animation-duration: 1s;
   animation-name: aparecer;
   animation-iteration-count: 1;
+  justify-content: space-around;
 }
 .imagenytexto:hover {
+  transition: all 0.6s ease;
+  margin-left: 11%;
+  margin-right: 11%;
+  margin-bottom: 1%;
+  height: 53vh;
+}
+.imagenytexto:not(:hover) {
   transition: all 0.6s ease;
   margin-left: 13%;
   margin-right: 13%;
   margin-bottom: 1%;
 }
-.imagenytexto:not(:hover) {
-  transition: all 0.6s ease;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 1%;
-}
 .imagenytexto .texto-mitad {
-  width: 50%;
+  width: 49%;
+  height: fit-content;
   padding: 1%;
   border: 2px black solid;
   border-radius: 20px;
   color: rgb(189, 189, 189);
   background-color: rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .imagenytexto .texto-mitad p {
-  padding-top: 10px;
-  width: 100%;
-  min-height: 100%;
   align-items: center;
   justify-content: center;
   font-size: x-large;
 }
 .imagenytexto .texto-mitad h3 {
+  display: flex;
   height: min-content;
   font-size: xx-large;
   color: rgb(255, 37, 37);
 }
 .imagenytexto .imagen-mitad {
-  width: 50%;
-  height: 50%;
-  padding: 1%;
+  width: 49%;
+  height: 99%;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px black solid;
 }
 .imagenytexto .imagen-mitad img {
   height: 100%;
   width: 100%;
-  border-radius: 20px;
-  border: 2px black solid;
 }
 
 /* CARTAS */
@@ -259,9 +259,46 @@ main::before {
   background-color: rgb(135, 135, 135);
   color: rgb(0, 0, 0);
   border: 3px rgb(255, 37, 37) solid;
-  transition: 0.4s;
+  transition: 0.4s ease-out;
 }
-.contenedor-cartas .card .texto-carta {
+.contenedor-cartas .card:hover {
+  border: 4px rgb(189, 189, 189) solid;
+  width: 410px;
+  height: 350px;
+}
+.contenedor-cartas .card:hover a {
+  color: rgb(212, 212, 212);
+  transition: 0.3s ease-out;
+  font-size: 115%;
+}
+.contenedor-cartas .card-noticias {
+  width: 290px;
+  height: 320px;
+  border-radius: 8px;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  background-color: rgb(135, 135, 135);
+  color: rgb(0, 0, 0);
+  border: 3px rgb(255, 37, 37) solid;
+  transition: 0.4s ease-out;
+}
+.contenedor-cartas .card-noticias img {
+  max-height: 75%;
+}
+.contenedor-cartas .card-noticias .texto-carta {
+  height: 25%;
+}
+.contenedor-cartas .card-noticias:hover {
+  border: 4px rgb(189, 189, 189) solid;
+  width: 330px;
+  height: 350px;
+}
+.contenedor-cartas .card-noticias:hover a {
+  color: rgb(212, 212, 212);
+  transition: 0.3s ease-out;
+  font-size: 115%;
+}
+.contenedor-cartas .texto-carta {
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 10px;
@@ -270,24 +307,18 @@ main::before {
   height: 20%;
   justify-content: space-around;
   text-decoration: underline;
+  text-align: center;
   text-shadow: rgb(58, 58, 58) 2px 2px 5px;
+  color: rgb(0, 0, 0);
+  font-size: 110%;
 }
-.contenedor-cartas .card img {
+.contenedor-cartas a {
+  color: black;
+}
+.contenedor-cartas a img {
   height: 80%;
   width: 100%;
   border-radius: 5px;
-}
-.contenedor-cartas .card a {
-  color: black;
-}
-.contenedor-cartas .card a:hover {
-  color: rgb(189, 189, 189);
-  transition: 0.3s;
-}
-.contenedor-cartas .card:hover {
-  border: 4px rgb(189, 189, 189) solid;
-  width: 410px;
-  height: 350px;
 }
 
 /* CARRUSEL */
@@ -299,37 +330,55 @@ main::before {
   margin: auto;
   display: flex;
   flex-direction: row;
+  transition: 0.3s;
+  border: 3px rgb(255, 37, 37) solid;
+  background-color: rgb(135, 135, 135);
+}
+.items-carrusel:hover {
+  border: 4px rgb(189, 189, 189) solid;
+}
+.items-carrusel:hover #carrusel-p-destacados-1 {
+  content: url(../images/index/index-amd-ryzen-logo-zoom.png);
+}
+.items-carrusel:hover #carrusel-p-destacados-2 {
+  content: url(../images/index/index-amd-radeon-logo-zoom.png);
+}
+.items-carrusel:hover #carrusel-p-destacados-3 {
+  content: url(../images/index/index-amd-epyc-logo-zoom.png);
+}
+.items-carrusel:hover .item-carrusel .tarjeta-carrusel .texto-carta a {
+  color: rgb(212, 212, 212);
+  font-size: 19px;
+  transition: 0.3s;
 }
 .items-carrusel a {
   height: 1px;
   width: 100%;
 }
 .items-carrusel .item-carrusel {
-  height: inherit;
+  height: 330px;
   position: relative;
-  width: inherit;
+  width: 250px;
 }
 .items-carrusel .item-carrusel .tarjeta-carrusel {
   height: inherit;
   width: inherit;
-  border: 3px red solid;
   border-radius: 20px;
 }
 .items-carrusel .item-carrusel .tarjeta-carrusel .texto-carta {
   height: 30%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 5%;
+  padding-top: 0px;
 }
 .items-carrusel .item-carrusel .tarjeta-carrusel .texto-carta a {
+  display: flex;
+  font-size: large;
+  text-align: center;
   text-decoration: underline;
-  color: black;
-}
-.items-carrusel .item-carrusel .tarjeta-carrusel .texto-carta a:hover {
-  color: rgb(255, 255, 255);
-  transition: 0.3s;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
 }
 .items-carrusel .item-carrusel .tarjeta-carrusel img {
   border-radius: 16px;
@@ -410,13 +459,15 @@ main::before {
 }
 
 .grid-localidades {
+  margin: auto;
+  width: 62%;
   display: grid;
+  height: 65vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   background-color: rgb(135, 135, 135);
   color: rgb(0, 0, 0);
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
 }
@@ -430,11 +481,50 @@ main::before {
 .gridloca-7,
 .gridloca-8,
 .gridloca-9 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 5px;
   text-align: center;
   color: rgb(0, 0, 0);
+}
+.gridloca-1:hover h4, .gridloca-1:active h4,
+.gridloca-2:hover h4,
+.gridloca-2:active h4,
+.gridloca-3:hover h4,
+.gridloca-3:active h4,
+.gridloca-4:hover h4,
+.gridloca-4:active h4,
+.gridloca-5:hover h4,
+.gridloca-5:active h4,
+.gridloca-6:hover h4,
+.gridloca-6:active h4,
+.gridloca-7:hover h4,
+.gridloca-7:active h4,
+.gridloca-8:hover h4,
+.gridloca-8:active h4,
+.gridloca-9:hover h4,
+.gridloca-9:active h4 {
+  font-size: 160%;
+  color: rgb(189, 189, 189);
+  transition: 0.3s;
+}
+.gridloca-1:hover p, .gridloca-1:active p,
+.gridloca-2:hover p,
+.gridloca-2:active p,
+.gridloca-3:hover p,
+.gridloca-3:active p,
+.gridloca-4:hover p,
+.gridloca-4:active p,
+.gridloca-5:hover p,
+.gridloca-5:active p,
+.gridloca-6:hover p,
+.gridloca-6:active p,
+.gridloca-7:hover p,
+.gridloca-7:active p,
+.gridloca-8:hover p,
+.gridloca-8:active p,
+.gridloca-9:hover p,
+.gridloca-9:active p {
+  font-size: 130%;
+  transition: 0.3s;
 }
 .gridloca-1 h4,
 .gridloca-2 h4,
@@ -448,6 +538,7 @@ main::before {
   margin: 0;
   color: rgb(0, 0, 0);
   text-decoration: underline;
+  font-size: 150%;
 }
 .gridloca-1 p,
 .gridloca-2 p,
@@ -458,6 +549,7 @@ main::before {
 .gridloca-7 p,
 .gridloca-8 p,
 .gridloca-9 p {
+  font-size: 120%;
   margin: 0;
 }
 
@@ -482,11 +574,6 @@ main::before {
   flex-direction: column;
 }
 
-.fabricas {
-  width: 75%;
-  margin: auto;
-}
-
 .localidad {
   margin: auto;
   display: flex;
@@ -494,8 +581,7 @@ main::before {
 }
 
 .contenedor-cartas-productos {
-  width: 100%;
-  max-width: 1200px;
+  width: 85%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -512,8 +598,7 @@ main::before {
   background-color: rgb(102, 102, 102);
   color: rgb(0, 0, 0);
   text-decoration: none;
-  padding: 5px;
-  border: 3px rgb(170, 0, 0) solid;
+  border: 3px rgb(255, 37, 37) solid;
   transition: 0.4s;
 }
 .contenedor-cartas-productos .card .texto-carta {
@@ -521,20 +606,25 @@ main::before {
 }
 .contenedor-cartas-productos .card img {
   width: 100%;
-  height: 70%;
+  height: 80%;
   border: 0;
+  background-image: url(../images/fondo-productos.png);
 }
 .contenedor-cartas-productos .card a {
-  text-decoration: none;
-  color: black;
-}
-.contenedor-cartas-productos .card a:hover {
-  color: rgb(170, 170, 170);
+  text-decoration: underline;
+  text-shadow: rgb(58, 58, 58) 2px 2px 5px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }
 .contenedor-cartas-productos .card:hover {
   width: 350px;
   height: 310px;
   border: 3px white solid;
+}
+.contenedor-cartas-productos .card:hover a {
+  color: rgb(212, 212, 212);
+  transition: 0.4s;
+  font-size: 22px;
 }
 
 #item-carrusel-r7-0, #tarjeta-carrusel-r7-0 {
@@ -550,7 +640,7 @@ main::before {
 }
 
 #item-carrusel-rx6-0, #tarjeta-carrusel-rx6-0 {
-  width: 3000px;
+  width: 2750px;
 }
 
 .boton-carrusel {
@@ -574,91 +664,96 @@ main::before {
   width: 250px;
   overflow: hidden;
   margin: auto;
-  justify-content: center;
-  align-items: center;
   display: flex;
   flex-direction: row;
+  transition: 0.3s;
+  border: 3px rgb(255, 37, 37) solid;
+  background-color: rgb(135, 135, 135);
 }
-.items-carrusel-p .item-carrusel {
-  height: 100%;
-  position: relative;
-  width: 250px;
-  margin: auto;
+.items-carrusel-p:hover {
+  border: 4px rgb(189, 189, 189) solid;
 }
-.items-carrusel-p .card-secreta {
-  width: 330px;
-  height: 280px;
-  border-radius: 8px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  margin: 20px;
-  text-align: center;
-  justify-content: center;
-  background-color: rgb(102, 102, 102);
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  padding: 5px;
-  display: none;
-}
-.items-carrusel-p .card-secreta h4 {
-  text-decoration: none;
-}
-.items-carrusel-p .card-secreta .texto-carta {
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 10px;
-  display: inherit;
-  flex-direction: column;
-  height: 30%;
-  justify-content: space-around;
-}
-.items-carrusel-p .card-secreta img {
-  border: 2px solid white;
-  border-style: outset;
-  max-height: 70%;
-  width: 100%;
-  min-height: 60%;
-}
-.items-carrusel-p .card-secreta a {
-  text-decoration: none;
-  color: black;
-}
-.items-carrusel-p .card-secreta a:hover {
-  color: rgb(170, 170, 170);
+.items-carrusel-p:hover .item-carrusel .tarjeta-carrusel .texto-carta a {
+  color: rgb(212, 212, 212);
+  font-size: 19px;
   transition: 0.3s;
 }
-.items-carrusel-p .card-secreta h4 {
-  padding: 0;
-}
-.items-carrusel-p .card-secreta ul {
-  display: inherit;
-}
-.items-carrusel-p .card-secreta ul li {
-  display: inherit;
-}
-.items-carrusel-p .tarjeta-carrusel {
-  left: 0;
-  height: 100%;
-  width: 250px;
-  text-align: center;
-  background-color: rgb(102, 102, 102);
-  justify-content: center;
-  z-index: -1;
-  background-color: rgb(0, 0, 0);
-}
-.items-carrusel-p .tarjeta-carrusel img {
-  height: 60%;
+.items-carrusel-p a {
+  height: 1px;
   width: 100%;
 }
-.items-carrusel-p .tarjeta-carrusel h4 {
-  text-decoration: none;
-  color: white;
+.items-carrusel-p .item-carrusel {
+  height: 330px;
+  position: relative;
+  width: 250px;
 }
-.items-carrusel-p .tarjeta-carrusel a {
-  text-decoration: none;
-  color: black;
+.items-carrusel-p .item-carrusel .tarjeta-carrusel {
+  height: inherit;
+  width: inherit;
+  border-radius: 20px;
 }
-position .items-carrusel-p .tarjeta-carrusel a:hover {
-  color: rgb(170, 170, 170);
+.items-carrusel-p .item-carrusel .tarjeta-carrusel .texto-carta {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  padding-top: 0px;
+}
+.items-carrusel-p .item-carrusel .tarjeta-carrusel .texto-carta a {
+  display: flex;
+  font-size: large;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  text-shadow: rgb(58, 58, 58) 2px 2px 5px;
+}
+.items-carrusel-p .item-carrusel .tarjeta-carrusel img {
+  border-radius: 16px;
+  height: 80%;
+  width: 100%;
+  padding: 10px;
+  background-image: url(../images/fondo-productos.png);
+}
+.items-carrusel-p .flechas-carrusel {
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  position: absolute;
+}
+.items-carrusel-p .flechas-carrusel .flechaizq {
+  display: flex;
+  justify-content: left;
+  height: 50px;
+  width: 20%;
+}
+.items-carrusel-p .flechas-carrusel .flechaizq img {
+  height: 20px;
+  width: 20px;
+  position: top;
+  scroll-margin-top: 0;
+  z-index: 10;
+}
+.items-carrusel-p .flechas-carrusel .espacioflechas {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+.items-carrusel-p .flechas-carrusel .flechader {
+  display: flex;
+  justify-content: right;
+  height: 50px;
+  width: 20%;
+}
+.items-carrusel-p .flechas-carrusel .flechader img {
+  height: 20px;
+  width: 20px;
+  position: top;
+  scroll-margin-top: 0;
+  z-index: 10;
 }
 
 .grid-faq {
@@ -681,7 +776,6 @@ position .items-carrusel-p .tarjeta-carrusel a:hover {
   color: rgb(0, 0, 0);
 }
 .grid-faq .grid-item-r {
-  font-size: small;
   margin-left: 5px;
   color: rgb(189, 189, 189);
   background-color: rgb(0, 0, 0);
@@ -699,7 +793,17 @@ position .items-carrusel-p .tarjeta-carrusel a:hover {
     max-width: 150px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+  .contenedor-cartas,
+  .contenedor-cartas-productos {
+    display: none;
+  }
+  .grid-faq .grid-item-r {
+    font-size: small;
+  }
+  .grid-localidades {
+    height: fit-content;
+  }
   .botones-header {
     flex-direction: column;
     max-width: 60%;
@@ -713,26 +817,62 @@ position .items-carrusel-p .tarjeta-carrusel a:hover {
   .grid-localidades {
     display: flex;
     flex-direction: column;
+    width: 70%;
+    font-size: medium;
   }
   .footer {
     flex-direction: row;
   }
+  .imagenytexto {
+    flex-direction: column;
+    height: 65vh;
+  }
+  .imagenytexto .texto-mitad {
+    height: max-content;
+    width: 80%;
+  }
+  .imagenytexto .imagen-mitad {
+    max-height: 80%;
+    width: 80%;
+    margin: 5px;
+  }
+  .imagenytexto:not(:hover) {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .imagenytexto:hover {
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 68vh;
+  }
 }
-@media (max-width: 1120px) {
+@media (max-width: 1120px) and (min-width: 851px) {
+  /* INDEX, GPU, CPU*/
   .contenedor-cartas,
   .contenedor-cartas-productos {
     display: none;
   }
-  .texto-mitad-p {
-    max-width: 300px;
-  }
   .imagenytexto {
     flex-direction: column;
-    justify-content: center;
+    height: 80vh;
   }
-  .texto-mitad-p p {
-    font-size: xx-small;
-    display: none;
+  .imagenytexto .texto-mitad {
+    height: max-content;
+    width: 85%;
+  }
+  .imagenytexto .imagen-mitad {
+    max-height: 80%;
+    width: 85%;
+    margin: 5px;
+  }
+  .imagenytexto:not(:hover) {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .imagenytexto:hover {
+    margin-left: 8%;
+    margin-right: 8%;
+    height: 83vh;
   }
   .card {
     font-size: small;
@@ -740,26 +880,19 @@ position .items-carrusel-p .tarjeta-carrusel a:hover {
   .items-carrusel {
     margin-top: 10px;
   }
-  .imagen-mitad {
-    height: 50%;
-    width: 80%;
-    margin: 5px;
-  }
-  .imagen-mitad img {
-    height: 100%;
-    width: 100%;
-    margin: 5px;
-  }
   .texto-mitad {
     width: 80%;
     margin: 5px;
+  }
+  .grid-localidades {
+    width: 80%;
   }
 }
 @media (min-width: 1120px) {
   .flechas-carrusel {
     display: none;
   }
-  .items-carrusel {
+  .items-carrusel, .items-carrusel-p {
     display: none;
   }
   .flecha {

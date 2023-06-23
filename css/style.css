@@ -568,6 +568,10 @@ main::before {
   margin-right: auto;
   margin-top: 30px;
 }
+.contenedorformulario p {
+  text-align: center;
+  font-size: larger;
+}
 
 .formulariocontacto {
   display: flex;
@@ -664,6 +668,7 @@ main::before {
   width: 250px;
   overflow: hidden;
   margin: auto;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   transition: 0.3s;
@@ -789,20 +794,90 @@ main::before {
     max-width: 250px;
     max-height: 200px;
   }
-  .botones-header {
-    max-width: 150px;
+  header .logo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
   }
-}
-@media (max-width: 850px) {
-  .contenedor-cartas,
+  header .logo p {
+    font-size: x-large;
+    margin-left: 10px;
+  }
+  header .botones-header {
+    border-left: 2px black solid;
+    width: 50%;
+    display: block;
+    text-align: left;
+  }
+  .contenedor-cartas {
+    display: none;
+  }
+  .foto-contacto {
+    width: 98%;
+    margin: auto;
+    margin-top: 5px;
+  }
+  .imagenytexto {
+    width: 98%;
+    margin: auto;
+    margin-top: 5px;
+    flex-direction: column;
+  }
+  .imagenytexto .texto-mitad {
+    width: 98%;
+  }
+  .imagenytexto .texto-mitad p {
+    font-size: medium;
+  }
+  .imagenytexto .imagen-mitad {
+    width: 98%;
+  }
+  .imagenytexto:not(:hover) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .grid-localidades {
+    flex-direction: column;
+    display: flex;
+    height: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+  }
+  .grid-localidades h4 {
+    font-size: large;
+  }
+  .grid-localidades p {
+    font-size: medium;
+  }
+  .contenedorformulario {
+    margin-top: 20px;
+    width: 90%;
+  }
   .contenedor-cartas-productos {
     display: none;
   }
   .grid-faq .grid-item-r {
     font-size: small;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 850px) and (min-width: 401px) {
+  .contenedor-cartas,
+  .contenedor-cartas-productos {
+    display: none;
+  }
+  .foto-contacto {
+    margin: 20px;
+  }
+  .grid-faq .grid-item-r {
+    font-size: small;
+    padding-bottom: 20px;
   }
   .grid-localidades {
     height: fit-content;
+    width: 90%;
+    margin-top: 20px;
   }
   .botones-header {
     flex-direction: column;
@@ -811,13 +886,24 @@ main::before {
   .card {
     display: none;
   }
-  .logo {
-    min-width: 50%;
+  header .logo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  header .logo p {
+    font-size: x-large;
+    margin-left: 10px;
+  }
+  header .botones-header {
+    border-left: 2px black solid;
+    width: 50%;
+    display: block;
+    text-align: left;
   }
   .grid-localidades {
     display: flex;
     flex-direction: column;
-    width: 70%;
     font-size: medium;
   }
   .footer {
@@ -825,25 +911,35 @@ main::before {
   }
   .imagenytexto {
     flex-direction: column;
-    height: 65vh;
+    height: 75vh;
   }
   .imagenytexto .texto-mitad {
     height: max-content;
     width: 80%;
   }
+  .imagenytexto .texto-mitad p {
+    font-size: medium;
+  }
   .imagenytexto .imagen-mitad {
-    max-height: 80%;
-    width: 80%;
+    max-height: 90%;
+    width: 90%;
     margin: 5px;
   }
   .imagenytexto:not(:hover) {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
   }
   .imagenytexto:hover {
-    margin-left: 2%;
-    margin-right: 2%;
-    height: 68vh;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 78vh;
+  }
+  .contenedorformulario {
+    margin-top: 20px;
+    width: 90%;
+  }
+  .items-carrusel {
+    margin-top: 5px;
   }
 }
 @media (max-width: 1120px) and (min-width: 851px) {
@@ -865,6 +961,10 @@ main::before {
     width: 85%;
     margin: 5px;
   }
+  header .logo p {
+    font-size: x-large;
+    margin-left: 10px;
+  }
   .imagenytexto:not(:hover) {
     margin-left: 10%;
     margin-right: 10%;
@@ -884,7 +984,17 @@ main::before {
     width: 80%;
     margin: 5px;
   }
+  .foto-contacto {
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+  }
   .grid-localidades {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .contenedorformulario {
+    margin-top: 20px;
     width: 80%;
   }
 }
@@ -897,6 +1007,10 @@ main::before {
   }
   .flecha {
     display: none;
+  }
+  header .logo p {
+    font-size: xx-large;
+    margin-left: 10px;
   }
 }
 

@@ -14,6 +14,8 @@
       margin: 5px;
     }
       }
+      header .logo p{font-size: x-large;margin-left: 10px;}
+   
   .imagenytexto:not(:hover) {
     margin-left: 10%;
  margin-right: 10%;
@@ -36,5 +38,7 @@
     width: 80%;
     margin: 5px;
   }
-  .grid-localidades{width: 80%;}
+  .foto-contacto{margin:auto;margin-top:20px;width: 80%;}
+  .grid-localidades{width: 80%;margin-top: 20px;}
+  .contenedorformulario{margin-top:20px;width: 80%;}
 }

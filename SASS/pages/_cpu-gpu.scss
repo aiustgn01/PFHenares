@@ -64,11 +64,13 @@ height: 320px;
 display: none;
 }
 .items-carrusel-p {
+  
   border-radius: 20px;
   height: 330px;
   width: 250px;
   overflow: hidden;
   margin: auto;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   transition: 0.3s;

@@ -485,23 +485,23 @@ main::before {
   text-align: center;
   color: rgb(0, 0, 0);
 }
-.gridloca-1:hover h4, .gridloca-1:active h4,
-.gridloca-2:hover h4,
-.gridloca-2:active h4,
-.gridloca-3:hover h4,
-.gridloca-3:active h4,
-.gridloca-4:hover h4,
-.gridloca-4:active h4,
-.gridloca-5:hover h4,
-.gridloca-5:active h4,
-.gridloca-6:hover h4,
-.gridloca-6:active h4,
-.gridloca-7:hover h4,
-.gridloca-7:active h4,
-.gridloca-8:hover h4,
-.gridloca-8:active h4,
-.gridloca-9:hover h4,
-.gridloca-9:active h4 {
+.gridloca-1:hover .fabrica, .gridloca-1:active .fabrica,
+.gridloca-2:hover .fabrica,
+.gridloca-2:active .fabrica,
+.gridloca-3:hover .fabrica,
+.gridloca-3:active .fabrica,
+.gridloca-4:hover .fabrica,
+.gridloca-4:active .fabrica,
+.gridloca-5:hover .fabrica,
+.gridloca-5:active .fabrica,
+.gridloca-6:hover .fabrica,
+.gridloca-6:active .fabrica,
+.gridloca-7:hover .fabrica,
+.gridloca-7:active .fabrica,
+.gridloca-8:hover .fabrica,
+.gridloca-8:active .fabrica,
+.gridloca-9:hover .fabrica,
+.gridloca-9:active .fabrica {
   font-size: 160%;
   color: rgb(189, 189, 189);
   transition: 0.3s;
@@ -526,20 +526,6 @@ main::before {
   font-size: 130%;
   transition: 0.3s;
 }
-.gridloca-1 h4,
-.gridloca-2 h4,
-.gridloca-3 h4,
-.gridloca-4 h4,
-.gridloca-5 h4,
-.gridloca-6 h4,
-.gridloca-7 h4,
-.gridloca-8 h4,
-.gridloca-9 h4 {
-  margin: 0;
-  color: rgb(0, 0, 0);
-  text-decoration: underline;
-  font-size: 150%;
-}
 .gridloca-1 p,
 .gridloca-2 p,
 .gridloca-3 p,
@@ -551,6 +537,20 @@ main::before {
 .gridloca-9 p {
   font-size: 120%;
   margin: 0;
+}
+.gridloca-1 .fabrica,
+.gridloca-2 .fabrica,
+.gridloca-3 .fabrica,
+.gridloca-4 .fabrica,
+.gridloca-5 .fabrica,
+.gridloca-6 .fabrica,
+.gridloca-7 .fabrica,
+.gridloca-8 .fabrica,
+.gridloca-9 .fabrica {
+  margin: 0;
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  font-size: 150%;
 }
 
 .estructuracontacto {
@@ -844,7 +844,7 @@ main::before {
     margin-top: 10px;
     width: 90%;
   }
-  .grid-localidades h4 {
+  .grid-localidades .fabrica {
     font-size: large;
   }
   .grid-localidades p {

@@ -1,22 +1,18 @@
 /*FOOTER*/
 footer {
   background-color:$color1;
-  color: black;
-  height: 100%;
-  position: sticky;
+  color: $color4;
   bottom: 0;
+  position: sticky;
   overflow: hidden;
-  max-width: 100vw;
   top: 20px;
   display: flex;
   flex-direction: column;
- 
-  
-  a {
+ a {
     text-decoration: none;
     color: $color4;
     &:hover {
-      color: $color2;
+      color: $color5;
       transition: 0.3s;
     }
   }

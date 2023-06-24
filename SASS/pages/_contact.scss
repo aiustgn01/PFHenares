@@ -1,21 +1,24 @@
 .foto-contacto {
   display: flex;
-  margin-left:20%;
+  margin-left: 20%;
   margin-right: 20%;
   animation-duration: 1s;
   animation-name: aparecer;
   animation-iteration-count: 1;
-  border-radius: 20px;
+  border-radius: $b-redondo;
   border: $borde1;
-
-  img{height: 100%;
-width: 100%;
-border-radius: 18px;
+overflow: hidden;
+  img {
+    height: 100%;
+    width: 100%;
+      }
+  &:hover {
+    margin-left: 18%;
+    margin-right: 18%;
+    border: $bordes2;
   }
-&:hover{margin-left: 18%;
-margin-right: 18%;
-border: $bordes2;}
-transition: 0.6s;}
+  transition: 0.6s;
+}
 .grid-localidades {
   margin: auto;
   width: 62%;
@@ -23,10 +26,10 @@ transition: 0.6s;}
   height: 65vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color:$color3;
+  background-color: $color3;
   color: $color4;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: $b-redondeado;
   box-shadow: $sombra-cajas;
 }
 .gridloca-1,
@@ -41,20 +44,29 @@ transition: 0.6s;}
   padding: 5px;
   text-align: center;
   color: $color4;
-  &:hover,&:active{ 
-    
-  .fabrica{font-size: 160%;color: $color2;transition: 0.3s;}
-  p{font-size: 130%;transition: 0.3s;}}
- 
+  &:hover,
+  &:active {
+    .fabrica {
+      font-size: 160%;
+      color: $color2;
+      transition: 0.3s;
+    }
+    p {
+      font-size: 130%;
+      transition: 0.3s;
+    }
+  }
+
   p {
     font-size: 120%;
     margin: 0;
   }
-  .fabrica{
+  .fabrica {
     margin: 0;
     color: $color4;
     text-decoration: underline;
-    font-size: 150%;}
+    font-size: 150%;
+  }
 }
 .estructuracontacto {
   display: flex;
@@ -62,19 +74,21 @@ transition: 0.6s;}
 }
 .contenedorformulario {
   color: $color4;
-  border-radius: 8px;
+  border-radius: $b-redondeado;
   box-shadow: $sombra-cajas;
   background-color: $color3;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  p{text-align: center;font-size: larger;}
+  p {
+    text-align: center;
+    font-size: larger;
+  }
 }
 .formulariocontacto {
   display: flex;
   flex-direction: column;
-  
 }
 
 .localidad {
@@ -82,4 +96,3 @@ transition: 0.6s;}
   display: flex;
   padding-top: 10px;
 }
-

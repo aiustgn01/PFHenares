@@ -1,5 +1,5 @@
 header {
-  background-color:$color1;
+  background-color: $color1;
   border-style: inset;
   border-color: $color4;
   display: flex;
@@ -13,20 +13,22 @@ header {
     display: flex;
     padding: 5px;
     justify-content: space-around;
-    h1{
+    h1 {
       margin-left: 10px;
     }
-    .amd-icono{
-    height: 50px;
-    width: 50px;
-    background-image:url(../icon/amd_icon_inverted.png)}
-    img {
-      
+    .amd-icono {
       height: 50px;
       width: 50px;
-      
-      &:hover{transition: 0.2s;
-        opacity: 0%;}
+      background-image: url(../icon/amd_icon_inverted.png);
+    }
+    img {
+      height: 50px;
+      width: 50px;
+
+      &:hover {
+        transition: 0.2s;
+        opacity: 0%;
+      }
     }
   }
   .botones-header {
@@ -37,7 +39,7 @@ header {
     justify-content: space-evenly;
     a {
       max-width: 20%;
-      color: black;
+      color: $color4;
       text-decoration: none;
       p {
         font-size: x-large;
@@ -45,8 +47,9 @@ header {
         justify-content: center;
       }
 
-      &:hover {transition: .5s ease;
-        color: white;
+      &:hover {
+        transition: 0.5s;
+        color: $color5;
       }
     }
   }

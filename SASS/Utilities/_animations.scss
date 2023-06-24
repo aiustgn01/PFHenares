@@ -1,34 +1,30 @@
-
 .aparecer {
-    animation-duration: 1s;
-    animation-name: aparecer;
-    animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+}
+
+@keyframes llegar-abajo {
+  0% {
+    transform: translateY(100%);
   }
-  
-  
-  @keyframes llegar-abajo {
-    0% {
-      transform: translateY(100%);
-    }
-    100% {
-      transform: translateY(0%);
-    }
+  100% {
+    transform: translateY(0%);
   }
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
   }
-  @keyframes llegar-izquierda {
-    0% {
-      transform: translate(-100%);
-    }
-    100% {
-      transform: translate(0%);
-    }
+  100% {
+    opacity: 1;
   }
-  
-  
+}
+@keyframes llegar-izquierda {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}

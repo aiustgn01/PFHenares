@@ -5,7 +5,7 @@
   padding: 0.5%;
   background: $color3;
   border: $bnegro;
-  border-radius: 2%;
+  border-radius: $b-redondeado;
   animation-duration: 1s;
   animation-name: aparecer;
   animation-iteration-count: 1;
@@ -28,7 +28,7 @@
     height: fit-content;
     padding: 1%;
     border: $bnegro;
-    border-radius: 20px;
+    border-radius: $b-redondo;
     color: rgb(189, 189, 189);
     background-color: $color4;
     text-align: center;
@@ -49,7 +49,7 @@
   .imagen-mitad {
     width: 49%;
     height: 99%;
-    border-radius: 20px;
+    border-radius: $b-redondo;
     overflow: hidden;
     border: $bnegro;
     img {
@@ -65,6 +65,7 @@
   height: 430px;
   display: flex;
   justify-content: center;
+  overflow: hidden;
   .card {
     width: 370px;
     height: 320px;
@@ -89,15 +90,19 @@
   .card-noticias {
     width: 290px;
     height: 320px;
-    border-radius: 8px;
+    border-radius: $b-redondeado;
     box-shadow: $sombra-cajas;
     margin: 20px;
     background-color: $color3;
     color: rgb(0, 0, 0);
     border: $borde1;
     transition: 0.4s ease-out;
-    img{max-height: 75%;}
-    .texto-carta{height: 25%;}
+    img {
+      max-height: 75%;
+    }
+    .texto-carta {
+      height: 25%;
+    }
     &:hover {
       a {
         color: $color5;
@@ -130,14 +135,14 @@
     img {
       height: 80%;
       width: 100%;
-      border-radius: 5px;
+      
     }
   }
 }
 
 /* CARRUSEL */
 .items-carrusel {
-  border-radius: 20px;
+  border-radius: $b-redondo;
   height: 330px;
   width: 250px;
   overflow: hidden;
@@ -176,7 +181,7 @@
       height: inherit;
       width: inherit;
 
-      border-radius: 20px;
+      border-radius: $b-redondo;
 
       .texto-carta {
         height: 30%;
@@ -195,7 +200,7 @@
         }
       }
       img {
-        border-radius: 16px;
+        
         height: 70%;
         width: 100%;
       }

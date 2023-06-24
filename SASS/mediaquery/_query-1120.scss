@@ -1,4 +1,4 @@
-@media (max-width: 1120px) and (min-width:851px) {
+@media (max-width: 1120px) and (min-width: 851px) {
   /* INDEX, GPU, CPU*/
   .contenedor-cartas,
   .contenedor-cartas-productos {
@@ -7,25 +7,30 @@
   .imagenytexto {
     flex-direction: column;
     height: 80vh;
-    .texto-mitad{height: max-content;width: 85%;}
+    .texto-mitad {
+      height: max-content;
+      width: 85%;
+    }
     .imagen-mitad {
       max-height: 80%;
       width: 85%;
       margin: 5px;
     }
-      }
-      header .logo p{font-size: x-large;margin-left: 10px;}
-   
+  }
+  header .logo p {
+    font-size: x-large;
+    margin-left: 10px;
+  }
+
   .imagenytexto:not(:hover) {
     margin-left: 10%;
- margin-right: 10%;
- }
+    margin-right: 10%;
+  }
   .imagenytexto:hover {
     margin-left: 8%;
- margin-right: 8%;
- height: 83vh
- }
-
+    margin-right: 8%;
+    height: 83vh;
+  }
 
   .card {
     font-size: small;
@@ -33,12 +38,23 @@
   .items-carrusel {
     margin-top: 10px;
   }
- 
-  .texto-mitad{
+
+  .texto-mitad {
     width: 80%;
     margin: 5px;
   }
-  .foto-contacto{margin:auto;margin-top:20px;width: 80%;}
-  .grid-localidades{width: 80%;margin-top: 20px;}
-  .contenedorformulario{margin-top:20px;width: 80%;}
+  /* CONTACTO*/
+  .foto-contacto {
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+  }
+  .grid-localidades {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .contenedorformulario {
+    margin-top: 20px;
+    width: 80%;
+  }
 }

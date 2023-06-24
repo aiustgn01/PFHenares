@@ -1,14 +1,6 @@
 main {
-  align-items: center;
   color: $color1;
-  background-image:$gradientepagina;
-  min-height: 1000px;
+  background-image: $gradientepagina;
   padding-bottom: 20px;
-  &::before {
-    content: "";
-    display: block;
-    position: relative;
-    height: 20px; /* Ajusta el valor según el margen superior que hayas aplicado */
-    background-color: inherit;
-  }
+  padding-top: 20px;
 }

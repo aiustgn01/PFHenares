@@ -1,54 +1,89 @@
-@media (max-width: 850px) and (min-width:401px){
+@media (max-width: 850px) and (min-width: 401px) {
+  /* INDEX */
   .contenedor-cartas,
   .contenedor-cartas-productos {
     display: none;
   }
-  .foto-contacto{margin: 20px;}
-  .grid-faq .grid-item-r{font-size: small;padding-bottom: 20px;;}
-  .grid-localidades{height: fit-content;width: 90%;margin-top:20px;}
-  .botones-header {
-    flex-direction: column;
-    max-width: 60%;
-  }
   .card {
     display: none;
   }
-  header{ .logo{display: flex;flex-direction:column;width:  50%;p{font-size: x-large;margin-left: 10px;}}
-  .botones-header{
-    border-left: $bnegro;
-    width: 50%;
-    display: block;
-    text-align: left;
-  }}
-  .grid-localidades{
-    display: flex;
-    flex-direction: column;
-    
-    font-size: medium;
-  }
-  .footer{
-    flex-direction: row
+  .items-carrusel {
+    margin-top: 5px;
   }
   .imagenytexto {
     flex-direction: column;
     height: 75vh;
-    .texto-mitad{height: max-content;width: 80%;
-    p{font-size: medium;}}
+    .texto-mitad {
+      height: max-content;
+      width: 80%;
+      p {
+        font-size: medium;
+      }
+    }
     .imagen-mitad {
       max-height: 90%;
       width: 90%;
       margin: 5px;
     }
-      }
+  }
   .imagenytexto:not(:hover) {
     margin-left: 3%;
- margin-right: 3%;
- }
+    margin-right: 3%;
+  }
   .imagenytexto:hover {
     margin-left: 1%;
- margin-right: 1%;
- height: 78vh
- }
- .contenedorformulario{margin-top:20px;width: 90%;}
- .items-carrusel{margin-top:5px}
+    margin-right: 1%;
+    height: 78vh;
+  }
+  /* CONTACTO */
+  .foto-contacto {
+    margin: 20px;
+  }
+  .grid-localidades {
+    display: flex;
+    flex-direction: column;
+
+    font-size: medium;
+  }
+  .contenedorformulario {
+    margin-top: 20px;
+    width: 90%;
+  }
+  /* FAQ */
+  .grid-faq .grid-item-r {
+    font-size: small;
+    padding-bottom: 20px;
+  }
+  .grid-localidades {
+    height: fit-content;
+    width: 90%;
+    margin-top: 20px;
+  }
+  /* HEADER */
+  .botones-header {
+    flex-direction: column;
+    max-width: 60%;
+  }
+
+  header {
+    .logo {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      p {
+        font-size: x-large;
+        margin-left: 10px;
+      }
+    }
+    .botones-header {
+      border-left: $bnegro;
+      width: 50%;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  .footer {
+    flex-direction: row;
+  }
 }

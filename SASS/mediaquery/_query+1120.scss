@@ -1,12 +1,16 @@
 @media (min-width: 1120px) {
   .flechas-carrusel {
- display: none;
-   }
-  .items-carrusel,.items-carrusel-p {
+    display: none;
+  }
+  .items-carrusel,
+  .items-carrusel-p {
     display: none;
   }
   .flecha {
     display: none;
   }
-  header .logo p{font-size:xx-large;margin-left: 10px;}
+  header .logo p {
+    font-size: xx-large;
+    margin-left: 10px;
+  }
 }

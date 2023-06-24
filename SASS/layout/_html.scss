@@ -1,28 +1,28 @@
 * {
-    margin: 0;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 h1 {
-    color: $color2;
-    text-align: center;
-    text-decoration: underline;
-    font-size: xx-large;
-  }
-  h2 {
-    color: $color2;
-    text-align: center;
-    text-decoration: underline;
-    font-size: xx-large;
-  }
-  h3 {
-    color: $color2;
-    text-align: center;
-    text-decoration: underline;
-    font-size: x-large;
-  }
-  
+  color: $color2;
+  text-align: center;
+  text-decoration: underline;
+  font-size: xx-large;
+}
+h2 {
+  color: $color2;
+  text-align: center;
+  text-decoration: underline;
+  font-size: xx-large;
+}
+h3 {
+  color: $color2;
+  text-align: center;
+  text-decoration: underline;
+  font-size: x-large;
+}

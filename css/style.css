@@ -4,9 +4,17 @@
 2- HACER QUE TODAS LAS IMAGENES TENGAN EL "ZOOM" DEL CARRUSEL DEL INDEX
 3- IMPLEMENTAR BOTON "VER MAS" EN CARDS Y CARRUSELES DE GPU/CPU CON INFORMACION DE CADA PRODUCTO
 (HARIAN VISIBLE UN DIV CON DISPLAY:HIDDEN Y POSITION:ABSOLUTE)
-4- INDICE DE PREGUNTAS DE FAQ Y SUBIR LA CANTIDAD DE PREGUNTAS A 20 PARA DARLE UNA FUNCION REAL AL INDICE
+4- INDICE DE PREGUNTAS EN FAQ Y SUBIR LA CANTIDAD DE PREGUNTAS A 20 PARA DARLE UNA FUNCION REAL AL INDICE
 5- AGREGAR UNA LEYENDA CON POSITION:ABSOLUTE Y DISPLAY:HIDDEN EN LA IMAGEN DE CONTACTO
-6- ENCONTRARLE UNA SOLUCION PARA QUE LOS CARRUSELES EMPIECEN DESDE EL ITEM 1 SIN UNA TARJETA 0*/
+6- ENCONTARLE UNA SOLUCION PARA QUE LOS CARRUSELES EMPIECEN DESDE EL ITEM 1 SIN UNA TARJETA 0
+7- VARIABLES PARA MARGENES Y TAMAÑOS DE TEXTO
+8- SEGUIR BORRANDO VALORES DE PROPIEDADES INNECESARIAS DE CSS 
+9- ESTANDARIZAR TODOS LOS MARGENES DE LA PAGINA*/
+/* BORDES NEGROS */
+/* COLOR BORDES*/
+/* BASE */
+/* HOVEREADO / DESTACADO */
+/*CURVATURA BORDES*/
 /* COLOR HEADER, COLOR MAS LLAMATIVO DE LA PAGINA */
 /* COLOR SECUNDARIO, DEBERIA COMPLOMENTAR AL COLOR 1 */
 /* COLOR DE TEXTO/FONDO CLAROS PARA TEXTO/FONDOS OSCUROS*/
@@ -80,12 +88,10 @@ body {
 /*FOOTER*/
 footer {
   background-color: rgb(255, 37, 37);
-  color: black;
-  height: 100%;
-  position: sticky;
+  color: rgb(0, 0, 0);
   bottom: 0;
+  position: sticky;
   overflow: hidden;
-  max-width: 100vw;
   top: 20px;
   display: flex;
   flex-direction: column;
@@ -98,7 +104,7 @@ footer a {
   color: rgb(0, 0, 0);
 }
 footer a:hover {
-  color: rgb(189, 189, 189);
+  color: rgb(212, 212, 212);
   transition: 0.3s;
 }
 
@@ -154,7 +160,7 @@ header .botones-header {
 }
 header .botones-header a {
   max-width: 20%;
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 header .botones-header a p {
@@ -163,23 +169,15 @@ header .botones-header a p {
   justify-content: center;
 }
 header .botones-header a:hover {
-  transition: 0.5s ease;
-  color: white;
+  transition: 0.5s;
+  color: rgb(212, 212, 212);
 }
 
 main {
-  align-items: center;
   color: rgb(255, 37, 37);
   background-image: linear-gradient(to bottom, black, grey);
-  min-height: 1000px;
   padding-bottom: 20px;
-}
-main::before {
-  content: "";
-  display: block;
-  position: relative;
-  height: 20px; /* Ajusta el valor según el margen superior que hayas aplicado */
-  background-color: inherit;
+  padding-top: 20px;
 }
 
 /* CONTENEDOR IMAGEN + TEXTO */
@@ -189,7 +187,7 @@ main::before {
   padding: 0.5%;
   background: rgb(135, 135, 135);
   border: 2px black solid;
-  border-radius: 2%;
+  border-radius: 8px;
   animation-duration: 1s;
   animation-name: aparecer;
   animation-iteration-count: 1;
@@ -249,6 +247,7 @@ main::before {
   height: 430px;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .contenedor-cartas .card {
   width: 370px;
@@ -318,7 +317,6 @@ main::before {
 .contenedor-cartas a img {
   height: 80%;
   width: 100%;
-  border-radius: 5px;
 }
 
 /* CARRUSEL */
@@ -381,7 +379,6 @@ main::before {
   color: rgb(0, 0, 0);
 }
 .items-carrusel .item-carrusel .tarjeta-carrusel img {
-  border-radius: 16px;
   height: 70%;
   width: 100%;
 }
@@ -445,12 +442,12 @@ main::before {
   animation-iteration-count: 1;
   border-radius: 20px;
   border: 3px rgb(255, 37, 37) solid;
+  overflow: hidden;
   transition: 0.6s;
 }
 .foto-contacto img {
   height: 100%;
   width: 100%;
-  border-radius: 18px;
 }
 .foto-contacto:hover {
   margin-left: 18%;
@@ -595,7 +592,7 @@ main::before {
   width: 330px;
   height: 280px;
   border-radius: 8px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
   margin: 20px;
   text-align: center;
   justify-content: center;
@@ -623,7 +620,7 @@ main::before {
 .contenedor-cartas-productos .card:hover {
   width: 350px;
   height: 310px;
-  border: 3px white solid;
+  border: 4px rgb(189, 189, 189) solid;
 }
 .contenedor-cartas-productos .card:hover a {
   color: rgb(212, 212, 212);
@@ -631,19 +628,23 @@ main::before {
   font-size: 22px;
 }
 
-#item-carrusel-r7-0, #tarjeta-carrusel-r7-0 {
+#item-carrusel-r7-0,
+#tarjeta-carrusel-r7-0 {
   width: 2250px;
 }
 
-#item-carrusel-r5-0, #tarjeta-carrusel-r5-0 {
+#item-carrusel-r5-0,
+#tarjeta-carrusel-r5-0 {
   width: 2250px;
 }
 
-#item-carrusel-rx7-0, #tarjeta-carrusel-rx7-0 {
+#item-carrusel-rx7-0,
+#tarjeta-carrusel-rx7-0 {
   width: 500px;
 }
 
-#item-carrusel-rx6-0, #tarjeta-carrusel-rx6-0 {
+#item-carrusel-rx6-0,
+#tarjeta-carrusel-rx6-0 {
   width: 2750px;
 }
 
@@ -653,7 +654,7 @@ main::before {
   display: flex;
   top: 90%;
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 #info-rx7 {
@@ -714,7 +715,6 @@ main::before {
   text-shadow: rgb(58, 58, 58) 2px 2px 5px;
 }
 .items-carrusel-p .item-carrusel .tarjeta-carrusel img {
-  border-radius: 16px;
   height: 80%;
   width: 100%;
   padding: 10px;
@@ -768,7 +768,7 @@ main::before {
   margin-left: 5%;
   margin-right: 5%;
   background-color: rgb(135, 135, 135);
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 10px;
 }
 .grid-faq .grid-item-p {
@@ -776,7 +776,7 @@ main::before {
   margin-right: 5px;
   background-color: rgb(189, 189, 189);
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   height: 95%;
   color: rgb(0, 0, 0);
 }
@@ -785,15 +785,45 @@ main::before {
   color: rgb(189, 189, 189);
   background-color: rgb(0, 0, 0);
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   height: 95%;
 }
 
 @media (max-width: 400px) {
+  /* INDEX */
   .imagen-mitad {
     max-width: 250px;
     max-height: 200px;
   }
+  /* INDEX CPU Y GPU */
+  .contenedor-cartas {
+    display: none;
+  }
+  .imagenytexto {
+    width: 98%;
+    margin: auto;
+    margin-top: 5px;
+    flex-direction: column;
+    height: 70vh;
+  }
+  .imagenytexto .texto-mitad {
+    width: 98%;
+  }
+  .imagenytexto .texto-mitad p {
+    font-size: medium;
+  }
+  .imagenytexto .imagen-mitad {
+    width: 98%;
+  }
+  .imagenytexto:not(:hover) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* CPU Y GPU */
+  .contenedor-cartas-productos {
+    display: none;
+  }
+  /*HEADER*/
   header .logo {
     display: flex;
     flex-direction: column;
@@ -809,32 +839,11 @@ main::before {
     display: block;
     text-align: left;
   }
-  .contenedor-cartas {
-    display: none;
-  }
+  /* CONTACTO */
   .foto-contacto {
     width: 98%;
     margin: auto;
     margin-top: 5px;
-  }
-  .imagenytexto {
-    width: 98%;
-    margin: auto;
-    margin-top: 5px;
-    flex-direction: column;
-  }
-  .imagenytexto .texto-mitad {
-    width: 98%;
-  }
-  .imagenytexto .texto-mitad p {
-    font-size: medium;
-  }
-  .imagenytexto .imagen-mitad {
-    width: 98%;
-  }
-  .imagenytexto:not(:hover) {
-    margin-left: 0;
-    margin-right: 0;
   }
   .grid-localidades {
     flex-direction: column;
@@ -854,60 +863,23 @@ main::before {
     margin-top: 20px;
     width: 90%;
   }
-  .contenedor-cartas-productos {
-    display: none;
-  }
+  /* FAQ */
   .grid-faq .grid-item-r {
     font-size: small;
     padding-bottom: 20px;
   }
 }
 @media (max-width: 850px) and (min-width: 401px) {
+  /* INDEX */
   .contenedor-cartas,
   .contenedor-cartas-productos {
     display: none;
   }
-  .foto-contacto {
-    margin: 20px;
-  }
-  .grid-faq .grid-item-r {
-    font-size: small;
-    padding-bottom: 20px;
-  }
-  .grid-localidades {
-    height: fit-content;
-    width: 90%;
-    margin-top: 20px;
-  }
-  .botones-header {
-    flex-direction: column;
-    max-width: 60%;
-  }
   .card {
     display: none;
   }
-  header .logo {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
-  header .logo p {
-    font-size: x-large;
-    margin-left: 10px;
-  }
-  header .botones-header {
-    border-left: 2px black solid;
-    width: 50%;
-    display: block;
-    text-align: left;
-  }
-  .grid-localidades {
-    display: flex;
-    flex-direction: column;
-    font-size: medium;
-  }
-  .footer {
-    flex-direction: row;
+  .items-carrusel {
+    margin-top: 5px;
   }
   .imagenytexto {
     flex-direction: column;
@@ -934,12 +906,51 @@ main::before {
     margin-right: 1%;
     height: 78vh;
   }
+  /* CONTACTO */
+  .foto-contacto {
+    margin: 20px;
+  }
+  .grid-localidades {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+  }
   .contenedorformulario {
     margin-top: 20px;
     width: 90%;
   }
-  .items-carrusel {
-    margin-top: 5px;
+  /* FAQ */
+  .grid-faq .grid-item-r {
+    font-size: small;
+    padding-bottom: 20px;
+  }
+  .grid-localidades {
+    height: fit-content;
+    width: 90%;
+    margin-top: 20px;
+  }
+  /* HEADER */
+  .botones-header {
+    flex-direction: column;
+    max-width: 60%;
+  }
+  header .logo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  header .logo p {
+    font-size: x-large;
+    margin-left: 10px;
+  }
+  header .botones-header {
+    border-left: 2px black solid;
+    width: 50%;
+    display: block;
+    text-align: left;
+  }
+  .footer {
+    flex-direction: row;
   }
 }
 @media (max-width: 1120px) and (min-width: 851px) {
@@ -984,6 +995,7 @@ main::before {
     width: 80%;
     margin: 5px;
   }
+  /* CONTACTO*/
   .foto-contacto {
     margin: auto;
     margin-top: 20px;
@@ -1002,7 +1014,8 @@ main::before {
   .flechas-carrusel {
     display: none;
   }
-  .items-carrusel, .items-carrusel-p {
+  .items-carrusel,
+  .items-carrusel-p {
     display: none;
   }
   .flecha {

@@ -5,24 +5,23 @@
   margin-left: 5%;
   margin-right: 5%;
   background-color: $color3;
-  border-radius: 15px;
+  border-radius: $b-redondo;
   padding: 10px;
   .grid-item-p {
     font-size: large;
-    margin-right: 5px;  
+    margin-right: 5px;
     background-color: $color2;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: $b-redondeado;
     height: 95%;
     color: $color4;
   }
   .grid-item-r {
-    
     margin-left: 5px;
     color: $color2;
     background-color: $color4;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: $b-redondeado;
     height: 95%;
   }
 }

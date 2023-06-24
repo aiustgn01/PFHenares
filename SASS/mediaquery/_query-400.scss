@@ -1,30 +1,86 @@
 @media (max-width: 400px) {
+  /* INDEX */
   .imagen-mitad {
     max-width: 250px;
     max-height: 200px;
   }
-  header{ .logo{display: flex;flex-direction:column;width:  50%;p{font-size: x-large;margin-left: 10px;}}
-  .botones-header{
-    border-left: $bnegro;
-    width: 50%;
-    display: block;
-    text-align: left;
-  }}
-  .contenedor-cartas{display: none;}
-  .foto-contacto{width: 98%;margin:auto;margin-top: 5px;}
-  .imagenytexto{width: 98%;margin: auto;margin-top:5px;flex-direction: column;
-  .texto-mitad{width:98%;
-  p{font-size: medium;}}
-.imagen-mitad{width: 98%;}}
+
+  /* INDEX CPU Y GPU */
+  .contenedor-cartas {
+    display: none;
+  }
+  .imagenytexto {
+    width: 98%;
+    margin: auto;
+    margin-top: 5px;
+    flex-direction: column;
+    height: 70vh;
+    .texto-mitad {
+      width: 98%;
+      p {
+        font-size: medium;
+      }
+    }
+    .imagen-mitad {
+      width: 98%;
+    }
+  }
   .imagenytexto:not(:hover) {
     margin-left: 0;
     margin-right: 0;
-    
-}
-.grid-localidades{flex-direction: column;display: flex;height: fit-content;margin:auto;margin-top:10px;width:90%;
-.fabrica{font-size: large;}
-p{font-size: medium;}}
-.contenedorformulario{margin-top:20px;width: 90%;}
-.contenedor-cartas-productos{display: none;}
-.grid-faq .grid-item-r{font-size: small;padding-bottom: 20px;}
+  }
+
+  /* CPU Y GPU */
+  .contenedor-cartas-productos {
+    display: none;
+  }
+  /*HEADER*/
+  header {
+    .logo {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      p {
+        font-size: x-large;
+        margin-left: 10px;
+      }
+    }
+    .botones-header {
+      border-left: $bnegro;
+      width: 50%;
+      display: block;
+      text-align: left;
+    }
+  }
+  /* CONTACTO */
+  .foto-contacto {
+    width: 98%;
+    margin: auto;
+    margin-top: 5px;
+  }
+
+  .grid-localidades {
+    flex-direction: column;
+    display: flex;
+    height: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    .fabrica {
+      font-size: large;
+    }
+    p {
+      font-size: medium;
+    }
+  }
+  .contenedorformulario {
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  /* FAQ */
+  .grid-faq .grid-item-r {
+    font-size: small;
+    padding-bottom: 20px;
+  }
 }

@@ -7,7 +7,13 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
-h2 {
+h1 {
+    color: $color2;
+    text-align: center;
+    text-decoration: underline;
+    font-size: xx-large;
+  }
+  h2 {
     color: $color2;
     text-align: center;
     text-decoration: underline;
@@ -18,11 +24,5 @@ h2 {
     text-align: center;
     text-decoration: underline;
     font-size: x-large;
-  }
-  h4 {
-    color: $color2;
-    text-align: center;
-    text-decoration: underline;
-    font-size: large;
   }
   

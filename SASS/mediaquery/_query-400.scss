@@ -1,9 +1,6 @@
 @media (max-width: 400px) {
   /* INDEX */
-  .imagen-mitad {
-    max-width: 250px;
-    max-height: 200px;
-  }
+ 
 
   /* INDEX CPU Y GPU */
   .contenedor-cartas {
@@ -17,17 +14,19 @@
     height: 70vh;
     .texto-mitad {
       width: 98%;
+      height: fit-content;
       p {
         font-size: medium;
       }
     }
     .imagen-mitad {
       width: 98%;
+      height: 48%;
     }
   }
   .imagenytexto:not(:hover) {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 1%;
+    margin-right: 1%;
   }
 
   /* CPU Y GPU */

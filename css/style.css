@@ -791,10 +791,6 @@ main {
 
 @media (max-width: 400px) {
   /* INDEX */
-  .imagen-mitad {
-    max-width: 250px;
-    max-height: 200px;
-  }
   /* INDEX CPU Y GPU */
   .contenedor-cartas {
     display: none;
@@ -808,16 +804,18 @@ main {
   }
   .imagenytexto .texto-mitad {
     width: 98%;
+    height: fit-content;
   }
   .imagenytexto .texto-mitad p {
     font-size: medium;
   }
   .imagenytexto .imagen-mitad {
     width: 98%;
+    height: 48%;
   }
   .imagenytexto:not(:hover) {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   /* CPU Y GPU */
   .contenedor-cartas-productos {
